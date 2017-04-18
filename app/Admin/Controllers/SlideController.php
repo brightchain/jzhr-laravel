@@ -24,8 +24,8 @@ class SlideController extends Controller
     {
         return Admin::content(function (Content $content) {
 
-            $content->header('header');
-            $content->description('description');
+            $content->header('幻灯片');
+            $content->description('列表');
 
             $content->body($this->grid());
         });
@@ -41,8 +41,8 @@ class SlideController extends Controller
     {
         return Admin::content(function (Content $content) use ($id) {
 
-            $content->header('header');
-            $content->description('description');
+            $content->header('幻灯片');
+            $content->description('列表');
 
             $content->body($this->form()->edit($id));
         });
@@ -57,8 +57,8 @@ class SlideController extends Controller
     {
         return Admin::content(function (Content $content) {
 
-            $content->header('header');
-            $content->description('description');
+            $content->header('幻灯片');
+            $content->description('列表');
 
             $content->body($this->form());
         });
@@ -72,14 +72,15 @@ class SlideController extends Controller
     protected function grid()
     {
         return Admin::grid(Slide::class, function (Grid $grid) {
-
+            $grid->model()->OrderBy('list');
             $grid->id('ID')->sortable();
-            $grid->imgsrc();
-            $grid->txt1();
-            $grid->txt2();
-            $grid->list();
-            $grid->created_at();
-            $grid->updated_at();
+            $grid->imgsrc('图片路径');
+            $grid->txt1('标题');
+            $grid->txt2('内容');
+            $grid->link('链接');
+            $grid->list('排序');
+            $grid->created_at('创建时间');
+            $grid->updated_at('更新时间');
         });
     }
 
@@ -93,10 +94,11 @@ class SlideController extends Controller
         return Admin::form(Slide::class, function (Form $form) {
 
             $form->display('id', 'ID');
-            $form->image('imgsrc','图片路径');
+            $form->image('imgsrc','图片路径')->uniqueName();
             $form->text('txt1','图片标题');
             $form->text('txt2','图片内容');
             $form->text('list','排序');
+            $form->url('link','链接');
             $form->display('created_at', '创建时间');
             $form->display('updated_at', '更新时间');
         });
