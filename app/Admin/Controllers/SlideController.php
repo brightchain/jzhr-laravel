@@ -75,10 +75,10 @@ class SlideController extends Controller
             $grid->model()->OrderBy('list');
             $grid->id('ID')->sortable();
             $grid->imgsrc('图片路径');
-            $grid->txt1('标题');
-            $grid->txt2('内容');
-            $grid->link('链接');
-            $grid->list('排序');
+            $grid->txt1('标题')->editable();
+            $grid->txt2('内容')->editable();
+            $grid->link('链接')->editable();
+            $grid->list('排序')->editable();
             $grid->created_at('创建时间');
             $grid->updated_at('更新时间');
         });

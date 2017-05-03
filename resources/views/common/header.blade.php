@@ -39,12 +39,12 @@
                 <nav class="c-mega-menu c-pull-right c-mega-menu-dark c-mega-menu-dark-mobile c-fonts-uppercase c-fonts-bold">
                     <ul class="nav navbar-nav c-theme-nav">
                         <li class="c-active">
-                            <a href="javascript:;" class="c-link dropdown-toggle">首页
+                            <a href="/" class="c-link dropdown-toggle">首页
                                 <span class="c-arrow c-toggler"></span>
                             </a>
                         </li>
                         <li class="c-menu-type-classic">
-                            <a href="javascript:;" class="c-link dropdown-toggle">关于金砖
+                            <a href="{{url('about')}}" class="c-link dropdown-toggle">关于金砖
                                 <span class="c-arrow c-toggler"></span>
                             </a>
                             <ul class="dropdown-menu c-menu-type-classic c-pull-left">

@@ -6311,7 +6311,7 @@ h1 {
   height: 60px;
   background-size: cover; }
   .c-content-line-icon.c-white {
-    background-image: url(../img/content/line-icons/white.png); }
+    background-image: url(../img/white.png); }
   .c-content-line-icon.c-icon-screen-chart {
     background-position: 0px -1300%; }
   .c-content-line-icon.c-icon-support {
@@ -7036,14 +7036,14 @@ h1 {
 .c-content-title-1 > .c-line-center {
   width: 30px;
   height: 3px;
-  background-color: #32c5d2;
+  background-color: #7a6a61;
   margin: 0 auto 30px auto; }
 
 .c-content-title-1 > .c-line-right,
 .c-content-title-1 > .c-line-left {
   width: 30px;
   height: 3px;
-  background-color: #32c5d2;
+  background-color: #7a6a61;
   margin: 0 0 30px 0; }
 
 .c-content-title-1 > .c-line-right {
@@ -7750,7 +7750,7 @@ h1 {
       opacity: 1; }
 
 .c-content-testimonials-4.c-icon-white .owl-theme .owl-controls .owl-nav div {
-  background-image: url(../img/content/line-icons/white.png); }
+  background-image: url(../img/white.png); }
 
 .c-content-testimonials-4 .owl-nav {
   position: absolute;
@@ -9097,7 +9097,7 @@ h1 {
     .c-content-feature-2.c-option-2:hover .c-icon-wrapper {
       border: 0; }
       .c-content-feature-2.c-option-2:hover .c-icon-wrapper > .c-content-line-icon {
-        background-image: url(../img/content/line-icons/white.png); }
+        background-image: url(../img/white.png); }
 
 .c-content-feature-2-grid .c-content-v-center {
   margin-bottom: 20px; }

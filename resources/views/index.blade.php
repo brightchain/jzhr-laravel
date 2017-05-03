@@ -28,7 +28,7 @@
     <link href="css/default.css" rel="stylesheet" id="style_theme" type="text/css" />
     <link href="css/custom.css" rel="stylesheet" type="text/css" />
     @stop
-@section('slide')
+@section('banner')
     <!-- BEGIN: LAYOUT/SLIDERS/REVO-SLIDER-4 -->
     <section class="c-layout-revo-slider c-layout-revo-slider-4" dir="ltr">
         <div class="tp-banner-container c-theme">
@@ -62,11 +62,11 @@
                         </li>
                         <!--END -->
                         <!--BEGIN: SLIDE #3 -->
-                        <li data-transition="fade" data-slotamount="1" data-masterspeed="700" data-delay="6000" data-thumb="">
+                        <li data-transition="fade" data-slotamount="1" data-masterspeed="700" data-delay="7000" data-thumb="">
                             <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                             <img alt="" src="upload/{{$slides[2]->imgsrc}}" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="visible-xs" />
-                            {{--<div class="rs-background-video-layer" data-forcerewind="on" data-volume="mute" data-videowidth="100%" data-videoheight="100%" data-videomp4="assets/base/media/video/video-2.mp4" data-videopreload="preload" data-videoloop="none"--}}
-                                 {{--data-forceCover="1" data-aspectratio="16:9" data-autoplay="true" data-autoplayonlyfirsttime="false" data-nextslideatend="true"> </div>--}}
+                            <div class="rs-background-video-layer" data-forcerewind="on" data-volume="mute" data-videowidth="100%" data-videoheight="100%" data-videomp4="img/jzhr.mp4" data-videopreload="preload" data-videoloop="none"
+                                 data-forceCover="1" data-aspectratio="16:9" data-autoplay="true" data-autoplayonlyfirsttime="false" data-nextslideatend="true"> </div>
                             <div class="tp-caption customin customout" data-x="center" data-y="center" data-hoffset="" data-voffset="-30" data-speed="500" data-start="1000" data-transform_idle="o:1;" data-transform_in="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;"
                                  data-transform_out="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:600;e:Back.easeInOut;" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600">
                                 <h3 class="c-main-title-square c-font-55 c-font-bold c-font-center c-font-uppercase c-font-white c-block">{{$slides[2]->txt1}}
@@ -417,16 +417,16 @@
                             <img src="img/team1.jpg" class="img-responsive c-overlay-object" alt=""> </div>
                         <div class="c-body">
                             <div class="c-head">
-                                <div class="c-name c-font-uppercase c-font-bold">Randy JANGO</div>
+                                <div class="c-name c-font-uppercase c-font-bold">贺孟杰</div>
                                 <ul class="c-socials c-theme-ul">
                                     <li>
                                         <a href="#">
-                                            <i class="icon-social-twitter"></i>
+                                            <i class="icon-bubbles"></i>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="icon-social-facebook"></i>
+                                            <i class="icon-envelope-open"></i>
                                         </a>
                                     </li>
                                     <li>
@@ -437,7 +437,7 @@
                                 </ul>
                             </div>
                             <div class="c-position"> 总裁, 董事会. </div>
-                            <p> Lorem ipsum dolor sit amet, dolor nemo amet elit. Nulla nemo consequuntur. </p>
+                            <p> 经管专业毕业，曾任职于深赛格、金元证券、小牛资本，在私募股权投资基金方面实践经验丰富。 </p>
                         </div>
                     </div>
                     <div class="c-content-person-1 c-option-2">
@@ -455,16 +455,16 @@
                             <img src="img/team4.jpg" class="img-responsive c-overlay-object" alt=""> </div>
                         <div class="c-body">
                             <div class="c-head">
-                                <div class="c-name c-font-uppercase c-font-bold">Mary Jane</div>
+                                <div class="c-name c-font-uppercase c-font-bold">阚达</div>
                                 <ul class="c-socials c-theme-ul">
                                     <li>
                                         <a href="#">
-                                            <i class="icon-social-twitter"></i>
+                                            <i class="icon-bubbles"></i>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="icon-social-facebook"></i>
+                                            <i class="icon-envelope-open"></i>
                                         </a>
                                     </li>
                                     <li>
@@ -474,8 +474,8 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="c-position"> 产品经理, 产品研发部. </div>
-                            <p> Lorem ipsum dolor sit amet, dolor nemo amet elit. Nulla nemo consequuntur. </p>
+                            <div class="c-position"> 投资总监, 证券投资部. </div>
+                            <p> 北京外国语大学双学士，曾先后任职于八阳资产、中欧瑞博、中证投资、KPMG，8年证券投资从业经验。</p>
                         </div>
                     </div>
                     <div class="c-content-person-1 c-option-2">
@@ -493,16 +493,16 @@
                             <img src="img/team7.jpg" class="img-responsive c-overlay-object" alt=""> </div>
                         <div class="c-body">
                             <div class="c-head">
-                                <div class="c-name c-font-uppercase c-font-bold">Beard Mcbeardson</div>
+                                <div class="c-name c-font-uppercase c-font-bold">孙东旭</div>
                                 <ul class="c-socials c-theme-ul">
                                     <li>
                                         <a href="#">
-                                            <i class="icon-social-twitter"></i>
+                                            <i class="icon-bubbles"></i>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="icon-social-facebook"></i>
+                                            <i class="icon-envelope-open"></i>
                                         </a>
                                     </li>
                                     <li>
@@ -512,11 +512,11 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="c-position"> CTO, JANGO Inc. </div>
-                            <p> Lorem ipsum dolor sit amet, dolor nemo amet elit. Nulla nemo consequuntur. </p>
+                            <div class="c-position"> 产品经理, 产品研发部. </div>
+                            <p> 新加坡南洋理工大学金融硕士，具有丰富的投资研发及数据分析从业经验。有多个私募基金设立规划经历。 </p>
                         </div>
                     </div>
-                    <div class="c-content-person-1 c-option-2">
+                   <!-- <div class="c-content-person-1 c-option-2">
                         <div class="c-caption c-content-overlay">
                             <div class="c-overlay-wrapper">
                                 <div class="c-overlay-content">
@@ -591,7 +591,7 @@
                             <div class="c-position"> Director, JANGO Inc. </div>
                             <p> Lorem ipsum dolor sit amet, dolor nemo amet elit. Nulla nemo consequuntur. </p>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
                 <!-- End-->
             </div>
@@ -642,5 +642,174 @@
             </div>
         </div>
     </div>
+
+
+    <!-- BEGIN: CONTENT/MISC/LATEST-ITEMS-1 -->
+    <div class="c-content-box c-size-md c-bg-grey-1">
+        <div class="container">
+            <div class="c-content-title-1">
+                <h3 class="c-center c-font-uppercase c-font-bold">新闻动态</h3>
+                <div class="c-line-center c-theme-bg"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 wow animate fadeInLeft">
+                    <div class="c-content-media-2-slider" data-slider="owl">
+                        <div class="c-content-label c-font-uppercase c-font-bold">公司新闻</div>
+                        <div class="owl-carousel owl-theme c-theme owl-single" data-single-item="true"
+                             data-auto-play="4000" data-rtl="false">
+                            <div class="item">
+                                <div class="c-content-media-2 c-bg-img-center"
+                                     style="background-image: url(img/18.jpg); min-height: 360px;">
+                                    <div class="c-panel">
+                                        <div class="c-fav">
+                                            <i class="icon-heart c-font-thin"></i>
+                                            <p class="c-font-thin">16</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="c-content-media-2 c-bg-img-center"
+                                     style="background-image: url(img/22.jpg); min-height: 360px;">
+                                    <div class="c-panel">
+                                        <div class="c-fav">
+                                            <i class="icon-heart c-font-thin"></i>
+                                            <p class="c-font-thin">24</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="c-content-media-2 c-bg-img-center"
+                                     style="background-image: url(img/32.jpg); min-height: 360px;">
+                                    <div class="c-panel">
+                                        <div class="c-fav">
+                                            <i class="icon-heart c-font-thin"></i>
+                                            <p class="c-font-thin">19</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow animate fadeInRight">
+                    <div class="c-content-testimonial-2-slider" data-slider="owl">
+                        <div class="c-title c-font-uppercase c-theme-bg">新闻动态</div>
+                        <div class="owl-carousel owl-theme c-theme owl-single" data-single-item="true"
+                             data-auto-play="6000" data-rtl="false">
+                            <div class="item">
+                                <div class="c-content-testimonial-2" style="min-height: 360px;">
+                                    <div class="c-testimonial c-font-bold c-font-uppercase">JANGO the best HTML theme
+                                        I've purchased in months!
+                                    </div>
+                                    <div class="c-author">
+                                        <div class="c-portrait" style="background-image: url(img/team13.jpg)"></div>
+                                        <div class="c-name c-font-uppercase">Jim Cook</div>
+                                        <p class="c-position c-theme c-font-uppercase">Orange Inc.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="c-content-testimonial-2" style="min-height: 360px;">
+                                    <div class="c-testimonial c-font-bold c-font-uppercase">Quick and extremely easy to
+                                        use with awesome customer support
+                                    </div>
+                                    <div class="c-author">
+                                        <div class="c-portrait" style="background-image: url(img/team6.jpg)"></div>
+                                        <div class="c-name c-font-uppercase">Jane Smith</div>
+                                        <p class="c-position c-theme c-font-uppercase">Loop Inc.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: CONTENT/MISC/LATEST-ITEMS-1 -->
+    <!-- BEGIN: CONTENT/SLIDERS/CLIENT-LOGOS-2 -->
+    <div class="c-content-box c-size-md c-bg-white">
+        <div class="container">
+            <!-- Begin: Testimonals 1 component -->
+            <div class="c-content-client-logos-slider-1  c-bordered" data-slider="owl">
+                <!-- Begin: Title 1 component -->
+                <div class="c-content-title-1">
+                    <h3 class="c-center c-font-uppercase c-font-bold">Happy Customers</h3>
+                    <div class="c-line-center c-theme-bg"></div>
+                </div>
+                <!-- End-->
+                <!-- Begin: Owlcarousel -->
+                <div class="owl-carousel owl-theme c-theme owl-bordered1 c-owl-nav-center" data-items="6"
+                     data-desktop-items="4" data-desktop-small-items="3" data-tablet-items="3"
+                     data-mobile-small-items="2" data-slide-speed="5000" data-rtl="false">
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/client1.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/client2.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/client3.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/client4.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/client5.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/client6.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/client5.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/client6.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/client5.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/client6.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/client5.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/client6.jpg" alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <!-- End-->
+            </div>
+            <!-- End-->
+        </div>
+    </div>
+    <!-- END: CONTENT/SLIDERS/CLIENT-LOGOS-2 -->
     <!-- END: CONTENT/FEATURES/FEATURES-11 -->
     @stop
