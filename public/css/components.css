@@ -26,6 +26,9 @@ a:hover,
 a:active {
   outline: none !important;
   text-decoration: none; }
+.t-indent{
+  text-indent:2em;
+}
 
 /*
  Internet Explorer 10 doesn't differentiate device width from viewport width, and thus doesn't 
@@ -99,7 +102,6 @@ h1 {
   background: 0;
   border: 0;
   outline: none; }
-
 .c-border {
   border: 1px solid #eeeeee; }
 

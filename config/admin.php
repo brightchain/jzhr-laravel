@@ -30,7 +30,7 @@ return [
     /*
      * Laravel-admin html title.
      */
-    'title'  => '金砖华荣',
+    'title'  => '深圳金砖华荣资产管理有限公司',
 
     /*
      * Laravel-admin auth setting.

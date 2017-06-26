@@ -14,10 +14,10 @@
                         </div>
                         <ul class="c-links">
                             <li>
-                                <a href="#">金砖简介</a>
+                                <a href="{{route('company')}}">金砖简介</a>
                             </li>
                             <li>
-                                <a href="#">精英团队</a>
+                                <a href="{{route('team')}}">精英团队</a>
                             </li>
                             <li>
                                 <a href="#">产品与服务</a>
@@ -37,7 +37,7 @@
                         <div class="c-blog">
                             <div class="c-post">
                                 <div class="c-post-img">
-                                    <img src="img/81.jpg" alt="" class="img-responsive" />
+                                    <img src="../img/81.jpg" alt="" class="img-responsive" />
                                 </div>
                                 <div class="c-post-content">
                                     <h4 class="c-post-title">
@@ -48,7 +48,7 @@
                             </div>
                             <div class="c-post c-last">
                                 <div class="c-post-img">
-                                    <img src="img/13.jpg" alt="" class="img-responsive" />
+                                    <img src="../img/13.jpg" alt="" class="img-responsive" />
                                 </div>
                                 <div class="c-post-content">
                                     <h4 class="c-post-title">
@@ -67,7 +67,7 @@
                             <h3 class="c-font-uppercase c-font-bold c-font-white">微信公众号</h3>
                             <div class="c-line-left hide"></div>
                         </div>
-                        <img src="img/weixin.jpg" alt="" width="120px" class="img-responsive" />
+                        <img src="../img/weixin.jpg" alt="" width="120px" class="img-responsive" />
                         <p style="padding-top: 10px">扫描关注金砖华荣
                             <br/>获取我们最新动态</p>
 

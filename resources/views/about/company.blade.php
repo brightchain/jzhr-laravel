@@ -1,69 +1,26 @@
-@extends('common.layouts')
-@section('title','{{$title}}')
-@section('style')
-    <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
-    <!--<link href="css/socicon.css" rel="stylesheet" type="text/css" /> -->
-    <link href="css/bootstrap-social.css" rel="stylesheet" type="text/css" />
-    <link href="css/font-awesome.min.css"" rel="stylesheet" type="text/css" />
-    <link href="css/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/animate.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <!-- END GLOBAL MANDATORY STYLES -->
-    <!-- BEGIN: BASE PLUGINS  -->
-    <link href="css/settings.css" rel="stylesheet" type="text/css" />
-    <link href="css/layers.css" rel="stylesheet" type="text/css" />
-    <link href="css/navigation.css" rel="stylesheet" type="text/css" />
-    <link href="css/cubeportfolio.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
-    <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
-    <link href="css/slider.css" rel="stylesheet" type="text/css" />
-    <!-- END: BASE PLUGINS -->
-    <!-- BEGIN: PAGE STYLES -->
-    <link href="css/ilightbox.css" rel="stylesheet" type="text/css" />
-    <!-- END: PAGE STYLES -->
-    <!-- BEGIN THEME STYLES -->
-    <link href="css/plugins.css" rel="stylesheet" type="text/css" />
-    <link href="css/components.css" id="style_components" rel="stylesheet" type="text/css" />
-    <link href="css/default.css" rel="stylesheet" id="style_theme" type="text/css" />
-    <link href="css/custom.css" rel="stylesheet" type="text/css" />
-    @stop
-@section('banner')
-
-        <!-- BEGIN: LAYOUT/BREADCRUMBS/BREADCRUMBS-3 -->
-        <div class="c-layout-breadcrumbs-1 c-bgimage c-subtitle c-fonts-uppercase c-fonts-bold c-bg-img-center" style="background-image: url(/img/bg-9.jpg)">
-            <div class="container">
-                <div class="c-page-title c-pull-left">
-                    <h3 class="c-font-uppercase c-font-bold c-font-dark c-font-20 c-font-slim">{{$title}}</h3>
-                    <h4 class="c-font-dark c-font-slim"> Page Sub Title Goes Here </h4>
+@extends('about.about')
+@section('content')
+    <div class="c-content-box c-size-md c-bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="c-content-title-1 c-center ">
+                    <h3 class="c-font-uppercase c-font-bold">公司简介</h3>
+                    <div class="c-line-center"></div>
                 </div>
-                <ul class="c-page-breadcrumbs c-theme-nav c-pull-right c-fonts-regular">
-                    <li>
-                        <a href="/" class="c-font-dark">首页</a>
-                    </li>
-                    <li class="c-font-dark">/</li>
-                    <li>
-                        <a href="{{$url}}" class="c-font-dark">{{$title}}</a>
-                    </li>
-                    <li class="c-font-dark">/</li>
-                    <li class="c-state_active c-font-dark">公司简介</li>
-                </ul>
-            </div>
-        </div>
-        <!-- BEGIN: CONTENT/MISC/ABOUT-2 -->
-        <div class="c-content-box c-size-md c-bg-white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 wow animate fadeInUp">
-                        <p>深圳金砖华荣资产管理有限公司（简称“金砖华荣”）是通过中国证券投资基金业协会备案，以股权投资、房地产投资和并购等私募投资基金产品为核心业务的综合性资产管理公司。</p>
-                        <p>金砖华荣凝聚了资质深厚的投顾团队和卓绝杰出的行业精英，依靠灵敏前瞻的理财触觉、专业领先的投资策略、科学规范的风险防御能力，将投资焦点聚于金融、房地产、智能科技等成长性确定的行业和板块，致力于为个人、企业和机构提供优质的资产管理服务。</p>
-                        <p>公司以优秀团队的投资指引、完善可靠的管理制度、科学合规的风控意识，积极承担新时期中国金融高速发展的使命，着力于成为领先国内、具有国际影响力的金融机构。金砖华荣始终以承载投资人财富为己任，未来公司将精准把握大陆多层次资本市场、房地产市场，持续创造佳绩。</p>
-                    </div>
+                <div class="col-sm-12 wow animate fadeInUp">
+                    <p class="t-indent">深圳金砖华荣资产管理有限公司（中基协私募基金管理人编号：P1014425）成立于2015年1月，金砖华荣投资研究团队来自于银行、信托、证券、 国际投行公司，公司凭借投研团队的专业能力和资源优势，对金融、房地产、智能科技等成长性行业
+                        和板块进行深入的研究。未来公司将精准把握大陆多层次资本市场、房地产市场，持续创造佳绩。</p>
+                    <p class="t-indent">金砖华荣于2016年10月正式荣任深圳商业联合会副会长单位，不仅凝聚了资质深厚
+                        的投顾团队和卓绝杰出的行业精英，并依靠灵敏前瞻的理财触觉、专业领先的投资策略、
+                        科学规范的风险防御能力，将投资焦点聚于金融、房地产、智能科技等成长性确定的行
+                        业和板块，致力于为个人、企业和机构提供优质的资产管理服务。</p>
                 </div>
 
-
+                <img class="col-sm-12 c-photo img-responsive wow animate fadeInUp" width="780" alt="" src="../img/company.jpg" style="visibility: visible; animation-name: fadeInUp; opacity: 1;padding-bottom: 20px;">
             </div>
+
         </div>
+
         <!-- END: CONTENT/MISC/ABOUT-2 -->
         <!-- BEGIN: CONTENT/FEATURES/FEATURES-8 -->
         <div class="c-content-box c-size-md c-bg-grey-1">
@@ -216,6 +173,4 @@
             </div>
         </div>
         <!-- END: CONTENT/MISC/SERVICES-2 -->
-    @stop
-@section('content')
     @stop

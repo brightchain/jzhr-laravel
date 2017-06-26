@@ -13,4 +13,12 @@
 
 Route::get('/', 'IndexController@index');
 
-Route::get('/about','AboutController@company')->name('about');
+Route::get('/about','AboutController@about')->name('about');
+
+Route::get('/about/company','AboutController@company')->name('company');
+
+Route::get('/about/concept','AboutController@concept')->name('concept');
+
+Route::get('/about/team','AboutController@team')->name('team');
+
+Route::get('/about/risk','AboutController@risk')->name('risk');
