@@ -1,0 +1,27 @@
+
+
+#win-detail .uk-close{
+	display:none
+	}
+#win-detail .uk-modal-dialog{
+ -webkit-box-shadow:0 0 10px #333;  
+  -moz-box-shadow:0 0 10px #333;  
+  box-shadow:0 0 10px #333;
+  
+  width:700px;  
+  height:500px;
+  
+}
+
+#win-detail .inner{
+	padding:0 8px;
+	}
+	
+#win-text{	
+	line-height:180%;
+	font-size:14px;}
+	
+.wty{
+	color:#F00;
+	font-size:16px;
+	margin-bottom:20px;}
