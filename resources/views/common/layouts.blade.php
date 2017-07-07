@@ -146,6 +146,17 @@
                         </div>
                     </div>
                 </li>
+                <li>
+                    <img src="img/banner3.jpg"  alt="">
+                    <div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-left">
+                        <div class="banner-text"><div class="uk-text-right">
+                                <h1>致力打造构建和谐健康、生机繁荣的金融生态环境11111</h1>
+                                <h2>——正行笃实、运筹制胜、诚信善为</h2>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
             </ul>
             <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
             <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
@@ -154,6 +165,7 @@
                 <div class="uk-container uk-container-center uk-text-left">
                     <li data-uk-slideshow-item="0"><a href=""></a></li>
                     <li data-uk-slideshow-item="1"><a href=""></a></li>
+                    <li data-uk-slideshow-item="2"><a href=""></a></li>
                 </div>
 
 
@@ -217,10 +229,6 @@
             <div class="uk-slidenav-position uk-margin pr-list uk-margin-large-top" data-uk-slider>
                 <div class="uk-slider-container">
                     <ul class="uk-slider uk-grid uk-grid-width-1-3 uk-grid-width-xlarge-1-3">
-
-
-
-
                         <li>
                             <div class="home-pr uk-text-center">
                                 <div class="pr-img"><img src="img/fund1.jpg"></div>
@@ -244,8 +252,6 @@
                                 </div>
                             </div>
                         </li>
-
-
                         <li>
                             <div class="home-pr uk-text-center">
                                 <div class="pr-img"><img src="img/fund2.jpg"></div>
@@ -318,8 +324,8 @@
                 </div>
                 <div class="uk-width-3-4 yw-info">
                     金砖华荣是一家以基金发行与管理为主营业务的专业基金管理机构。<br>
-                    金砖华荣投资研究团队来自于银行、信托、证券、 国际投行公司<br>
-                    团队成员平均拥有10 年以上的债权融资、股权投资、信贷风险审评、收购兼并等金融服务行业实战经验。
+                    金砖华荣投资研究团队来自于银行、信托、证券、国际投行公司，<br>
+                    公司凭借投研团队的专业能力和资源优势，对金融、房地产、智能科技等成长性行业和板块进行深入的研究。
                 </div>
             </div>
 
@@ -327,33 +333,34 @@
             <div class="yws uk-grid uk-margin-large-bottom">
                 <div class="uk-width-1-2">
                     <div class="yw-kk">
-                        <div class="pic"><img src="images/home/yw1.jpg"></div>
-                        <div class="title">资产管理</div>
-                        <div class="info">资产管理业务是中融天成市场和客户战略的“发动机”，公司在制度化规范管理之下，针对市场变化及客户特性，将触角扩展至所有金融资产服务的最前沿，为客户量身定制全天候资产配置服务和体验，实现财务自由。</div>
+                        <div class="pic"><img src="img/business1.jpg"></div>
+                        <div class="title">股权投资</div>
+                        <div class="info">金砖华荣致力于向具有高成长性的非上市企业进行股权投资，并提供相应的管理和其他增值服务，以期通过IPO或者其他方式退出，实现客户资金增值的资本运作。</div>
                     </div>
                 </div>
 
                 <div class="uk-width-1-2">
                     <div class="yw-kk">
-                        <div class="pic"><img src="images/home/yw3.jpg"></div>
-                        <div class="title">财富管理</div>
-                        <div class="info">中融天成为高净值客户提供全面的财富保值、增值、资产传承、定制金融服务及个性化管家式服务。以精细化、专业化、系统化的服务模式和理念，帮助客户创造财富、管理财富、传承财富，为客户建立一种高贵的生活品质。</div>
-                    </div>
-                </div>
-
-                <div class="uk-width-1-2 uk-margin-large-top">
-                    <div class="yw-kk">
-                        <div class="pic"><img src="images/home/yw2.jpg"></div>
+                        <div class="pic"><img src="img/business2.jpg"></div>
                         <div class="title">房地产投资</div>
-                        <div class="info">中融天成致力于发掘深圳本地优质物业投资机会，通过完善的交易方案，在提供充分的安全保障的前提下，为投资人获取优越的回报。我们以客户利益至上，矢志成为投资者以及房地产开发商的首选战略合作伙伴。</div>
+                        <div class="info">金砖华荣致力于深圳本地优质房地产投资，通过物业并购、城市更新、物业旧改等投资方式，对标的项目进行深入全面的评估研究，在科学分析的基础上进行投资决策，灵活把握市场机会。</div>
                     </div>
                 </div>
 
                 <div class="uk-width-1-2 uk-margin-large-top">
                     <div class="yw-kk">
-                        <div class="pic"><img src="images/home/yw4.jpg"></div>
-                        <div class="title">置业租赁</div>
-                        <div class="info">中融天成以精细化、主动型管控体系，立足深圳，牢牢把握房地产市场脉搏。通过抓住机遇，资源整合，围绕房地产的开发、买卖、租赁，打造出一条龙服务的产业链，立志朝一流、专业、领先的高端置业企业迈进。</div>
+                        <div class="pic"><img src="img/business3.jpg"></div>
+                        <div class="title">并购基金</div>
+                        <div class="info">金砖华荣为并购企业提供融资支持，如过桥贷款，以较低的风险获得固定或浮动收益，同时可通过将一部分债务融资转变成权益性资本，实现长期股权投资收益</div>
+                    </div>
+                </div>
+
+                <div class="uk-width-1-2 uk-margin-large-top">
+                    <div class="yw-kk">
+                        <div class="pic"><img src="img/business4.jpg"></div>
+                        <div class="title">证券投资</div>
+                        <div class="info">金砖华荣拥有来自于银行、信托、证券、 国际投行公司等专业的投资团队，公司凭借投研团队的专业能力和资源优势，对金融、房地产、智能科技等成长性行业
+                            和板块进行深入的研究。持续创造佳绩。</div>
                     </div>
                 </div>
 
@@ -379,10 +386,10 @@
 
                             <li>
                                 <div class="team uk-text-center">
-                                    <div class="team-img uk-border-circle"><a href="team.php"><img src="images/team/team03.png"></a></div>
+                                    <div class="team-img uk-border-circle"><a href="team.php"><img src="img/team1.jpg"></a></div>
                                     <div class="uk-margin">
-                                        <div class="uk-h2 uk-margin-small"><a href="team.php">曾 嘉宝</a></div>
-                                        <div class="uk-h4 uk-margin-small">董事/项目运营中心总经理</div>
+                                        <div class="uk-h2 uk-margin-small"><a href="team.php">贺 孟杰</a></div>
+                                        <div class="uk-h4 uk-margin-small">总裁 /董事办</div>
                                     </div>
                                 </div>
                             </li>
@@ -390,20 +397,20 @@
 
                             <li>
                                 <div class="team uk-text-center">
-                                    <div class="team-img uk-border-circle"><a href="team.php"><img src="images/team/team01.png"></a></div>
+                                    <div class="team-img uk-border-circle"><a href="team.php"><img src="img/team4.jpg"></a></div>
                                     <div class="uk-margin">
-                                        <div class="uk-h2 uk-margin-small"><a href="team.php">崔 政德</a></div>
-                                        <div class="uk-h4 uk-margin-small">董事长</div>
+                                        <div class="uk-h2 uk-margin-small"><a href="team.php">阚 达</a></div>
+                                        <div class="uk-h4 uk-margin-small">投资总监 /证券投资部</div>
                                     </div>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="team uk-text-center">
-                                    <div class="team-img uk-border-circle"><a href="team.php"><img src="images/team/team02.png"></a></div>
+                                    <div class="team-img uk-border-circle"><a href="team.php"><img src="img/team7.jpg"></a></div>
                                     <div class="uk-margin">
-                                        <div class="uk-h2 uk-margin-small"><a href="team.php">蒋 康</a></div>
-                                        <div class="uk-h4 uk-margin-small">董事/首席合伙人</div>
+                                        <div class="uk-h2 uk-margin-small"><a href="team.php">孙 东旭</a></div>
+                                        <div class="uk-h4 uk-margin-small">产品经理 /产品研发部</div>
                                     </div>
                                 </div>
                             </li>
@@ -441,19 +448,76 @@
 
 
                 <div class="uk-width-1-2 uk-margin-large-bottom">
-                    <div class="title"><span class="uk-h2">市场资讯</span><a href="news.php?class_id=242">更多</a></div>
+                    <div class="title"><span class="uk-h2">市场资讯</span><a href="news.php?class_id=242" class="a-link">更多</a></div>
 
-                    <div class="uk-grid uk-margin-large-top">
+                    <div class="row" style="padding-top: 40px">
+                        <div class="news-box clearfix">
+                            <div class="news-box-img">
+                                <a href="">
+                                    <img src="img/news1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="news-content">
+                                <a href="">
+                                    <div class="title">
+                                        衡盛生物科技有限公司项目发布会
+                                    </div>
+                                </a>
+                                <div class="content">
+                                    2016年12月17日，“衡盛生物科技有限公司项目发布会”在深圳福田中信证券大厦23楼召开。 此次发布会是...
+                                </div>
 
+                            </div>
+                        </div>
+                        <div class="news-box clearfix">
+                            <div class="news-box-img">
+                                <a href="">
+                                    <img src="img/news2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="news-content">
+                                <a href="">
+                                    <div class="title">
+                                        衡盛生物科技有限公司项目发布会
+                                    </div>
+                                </a>
+                                <div class="content">
+                                    2016年12月17日，“衡盛生物科技有限公司项目发布会”在深圳福田中信证券大厦23楼召开。 此次发布会是...
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="news-list">
+                            <ul>
+                                <li>
+                                    <a href="">衡盛生物科技有限公司项目发布会</a>
+                                    <div class="news-date">2017.6.28</div>
+                                </li>
+                                <li>
+                                    <a href="">衡盛生物科技有限公司项目发布会</a>
+                                    <div class="news-date">2017.6.28</div>
+                                </li>
+                                <li>
+                                    <a href="">衡盛生物科技有限公司项目发布会</a>
+                                    <div class="news-date">2017.6.28</div>
+                                </li>
+                                <li>
+                                    <a href="">衡盛生物科技有限公司项目发布会</a>
+                                    <div class="news-date">2017.6.28</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        </div>
                     </div>
-                </div>
+
 
 
 
 
 
                 <div class="uk-width-1-2 uk-margin-large-bottom">
-                    <div class="title"><span class="uk-h2">活动新闻</span><a href="news.php?class_id=346">更多</a></div>
+                    <div class="title"><span class="uk-h2">活动新闻</span><a href="news.php?class_id=346" class="a-link">更多</a></div>
 
                     <div class="uk-grid uk-margin-large-top">
 
@@ -472,18 +536,100 @@
 
     <div class="foot">
         <div class="uk-container uk-container-center uk-padding-remove">
-            <div class="uk-display-inline-block">
-                <a href="contact.php">联系我们</a>
-                <a href="guidelines.php">投资指引</a>
-                <a href="contact.php">投诉建议</a>
-                <a href="disclaimer.php">免责声明</a>
-                <br>
-                版权所有 © 中融天成　|　Copyright 2016 szqhzttc.com ,All Rights Reserved</div>
-            <div class="uk-display-inline-block uk-align-right uk-text-right">投资有风险，购买需谨慎<br>
-                粤ICP备14057308号-1
+            <div class="uk-grid">
+                <div class="uk-width-1-4">
+                    <div class="c-content-title-1">
+                        <h3 class="c-font-uppercase c-font-bold c-font-white">金砖
+                            <span class="c-theme-font">华荣</span>
+                        </h3>
+                        <div class="c-line-left hide"></div>
+                        <p class="c-text"> 深圳金砖华荣资产管理有限公司（中基协私募基金管理人编号：P1014425）成立于2015年1月...</p>
+                    </div>
+                    <ul class="c-links">
+                        <li>
+                            <a href="{{route('company')}}">金砖简介</a>
+                        </li>
+                        <li>
+                            <a href="{{route('team')}}">精英团队</a>
+                        </li>
+                        <li>
+                            <a href="#">产品与服务</a>
+                        </li>
+                        <li>
+                            <a href="#">工作机会</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uk-width-1-4">
+                    <div class="c-content-title-1">
+                        <h3 class="c-font-uppercase c-font-bold c-font-white">金砖动态</h3>
+                        <div class="c-line-left hide"></div>
+                    </div>
+                    <div class="c-blog">
+                        <div class="c-post">
+                            <div class="c-post-img">
+                                <img src="../img/81.jpg" alt="" class="img-responsive" />
+                            </div>
+                            <div class="c-post-content">
+                                <h4 class="c-post-title">
+                                    <a href="#">员工生日会活动</a>
+                                </h4>
+                                <p class="c-text">公司为3月份生日的同事举行员工生日会活动，更多精彩游戏...</p>
+                            </div>
+                        </div>
+                        <div class="c-post c-last">
+                            <div class="c-post-img">
+                                <img src="../img/13.jpg" alt="" class="img-responsive" />
+                            </div>
+                            <div class="c-post-content">
+                                <h4 class="c-post-title">
+                                    <a href="#">产品路演发布会</a>
+                                </h4>
+                                <p class="c-text">3月12号在中信证券大厦召开产品路演发布会，这是一个股权类基金产品...</p>
+                            </div>
+                        </div>
+                        <a href="#" class="">更多...</a>
+                    </div>
+                </div>
+                <div class="uk-width-1-4">
+                    <div class="c-content-title-1">
+                        <h3 class="c-font-uppercase c-font-bold c-font-white">微信公众号</h3>
+                        <div class="c-line-left hide"></div>
+                    </div>
+                    <img src="../img/weixin.jpg" alt="" width="120px" class="img-responsive" />
+                    <p style="padding-top: 10px">扫描关注金砖华荣
+                        <br/>获取我们最新动态</p>
+                </div>
+                <div class="uk-width-1-4">
+                    <div class="c-content-title-1">
+                        <h3 class="c-font-uppercase c-font-bold c-font-white">联系我们</h3>
+                        <div class="c-line-left hide"></div>
+                        <p></p>
+                    </div>
+
+                    <ul class="c-address">
+                        <li>
+                            <i class="uk-icon-map-marker uk-icon-small"></i>  深圳市前海深港合作区前湾一路1号A栋201室</li>
+                        <li>
+                            <i class="uk-icon-phone uk-icon-small"></i> 0755-82986278</li>
+                        <li>
+                            <i class="uk-icon-envelope uk-icon-small"></i> manager@chinajzhr.com</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="">
+                <p class="c-copyright c-font-grey">2016-2019 &copy; 金砖华荣
+                    <span class="c-font-grey-3">All Rights Reserved.</span>
+                </p>
             </div>
         </div>
     </div>
+
+
+
+
+
 
 
 
