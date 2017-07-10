@@ -1,263 +1,81 @@
 @extends('about.about')
 
+@section('text-content')
+    <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
 
-@section('content')
-    <!-- BEGIN: CONTENT/MISC/TEAM-3 -->
-    <div class="c-content-box c-size-md c-bg-grey-1">
-        <div class="container">
-            <!-- Begin: Testimonals 1 component -->
-            <div class="c-content-team-1-slider" data-slider="owl" data-items="3">
-                <!-- Begin: Title 1 component -->
-                <div class="c-content-title-1">
-                    <h3 class="c-center c-font-uppercase c-font-bold">专业团队</h3>
-                    <div class="c-line-center c-theme-bg"></div>
+
+        <div class="about-text uk-margin-top uk-text-center uk-margin-large-top ">
+            <div class="uk-h1 title-line uk-margin-top uk-clearfix">专业团队</div>
+        </div>
+
+        <div class="uk-clearfix"></div>
+
+        <div class="uk-grid uk-margin team1 uk-margin-large-top">
+            <div class="uk-width-2-3">
+                <div class="inner">
+                    <div class="team-h1 uk-margin-large-top">贺 孟杰<span>总裁/董事办</span></div>
+                    <div class="team-text uk-margin-large-top">经济管理系专业， 曾任职于深赛格
+                        （000058）、金元证券等机构，参与过
+                        多项IPO运作及发行管理，在私募股权投
+                        资、IPO运作、资本运作等方面具有较高
+                        的专业技术及丰富的管理经验。
+                    </div>
                 </div>
-                <!-- End-->
-                <div class="row">
-                    <div class="col-md-4 col-sm-6 c-margin-b-30">
-                        <div class="c-content-person-1 c-option-2">
-                            <div class="c-caption c-content-overlay">
-                                <div class="c-overlay-wrapper">
-                                    <div class="c-overlay-content">
-                                        <a href="#">
-                                            <i class="icon-link"></i>
-                                        </a>
-                                        <a href="../img/team1.jpg" data-lightbox="fancybox" data-fancybox-group="gallery-4">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <img class="c-overlay-object img-responsive" src="../img//team1.jpg" alt=""> </div>
-                            <div class="c-body">
-                                <div class="c-head">
-                                    <div class="c-name c-font-uppercase c-font-bold">贺孟杰</div>
-                                    <ul class="c-socials c-theme-ul">
-                                        <li>
-                                            <a href="#">
-                                                <i class="icon-bubbles"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="icon-envelope-open"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="icon-social-dribbble"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="c-position"> 总裁, 董事办 </div>
-                                <p> Lorem ipsum dolor sit amet, dolor nemo amet elit. Nulla nemo consequuntur. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 c-margin-b-30">
-                        <div class="c-content-person-1 c-option-2">
-                            <div class="c-caption c-content-overlay">
-                                <div class="c-overlay-wrapper">
-                                    <div class="c-overlay-content">
-                                        <a href="#">
-                                            <i class="icon-link"></i>
-                                        </a>
-                                        <a href="../img//team4.jpg" data-lightbox="fancybox" data-fancybox-group="gallery-4">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <img class="c-overlay-object img-responsive" src="../img/team4.jpg" alt=""> </div>
-                            <div class="c-body">
-                                <div class="c-head">
-                                    <div class="c-name c-font-uppercase c-font-bold">阚达</div>
-                                    <ul class="c-socials c-theme-ul">
-                                        <li>
-                                            <a href="#">
-                                                <i class="icon-bubbles"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="icon-envelope-open"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="icon-social-dribbble"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="c-position"> 投资总监, 证券投资部 </div>
-                                <p> Lorem ipsum dolor sit amet, dolor nemo amet elit. Nulla nemo consequuntur. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 c-margin-b-30">
-                        <div class="c-content-person-1 c-option-2">
-                            <div class="c-caption c-content-overlay">
-                                <div class="c-overlay-wrapper">
-                                    <div class="c-overlay-content">
-                                        <a href="#">
-                                            <i class="icon-link"></i>
-                                        </a>
-                                        <a href="../img//team7.jpg" data-lightbox="fancybox" data-fancybox-group="gallery-4">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <img class="c-overlay-object img-responsive" src="img/team7.jpg" alt=""> </div>
-                            <div class="c-body">
-                                <div class="c-head">
-                                    <div class="c-name c-font-uppercase c-font-bold">Lisa Jeep</div>
-                                    <ul class="c-socials c-theme-ul">
-                                        <li>
-                                            <a href="#">
-                                                <i class="icon-bubbles"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="icon-envelope-open"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="icon-social-dribbble"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="c-position"> Entrepreneur </div>
-                                <p> Lorem ipsum dolor sit amet, dolor nemo amet elit. Nulla nemo consequuntur. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 c-margin-b-30">
-                        <div class="c-content-person-1 c-option-2">
-                            <div class="c-caption c-content-overlay">
-                                <div class="c-overlay-wrapper">
-                                    <div class="c-overlay-content">
-                                        <a href="#">
-                                            <i class="icon-link"></i>
-                                        </a>
-                                        <a href="assets/base../img/content/team/team10.jpg" data-lightbox="fancybox" data-fancybox-group="gallery-4">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <img class="c-overlay-object img-responsive" src="assets/base/img/content/team/team10.jpg" alt=""> </div>
-                            <div class="c-body">
-                                <div class="c-head">
-                                    <div class="c-name c-font-uppercase c-font-bold">Jhon Woo</div>
-                                    <ul class="c-socials c-theme-ul">
-                                        <li>
-                                            <a href="#">
-                                                <i class="icon-bubbles"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="icon-envelope-open"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="icon-social-dribbble"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="c-position"> CTO, Octoberite </div>
-                                <p> Lorem ipsum dolor sit amet, dolor nemo amet elit. Nulla nemo consequuntur. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 c-margin-b-30">
-                        <div class="c-content-person-1 c-option-2">
-                            <div class="c-caption c-content-overlay">
-                                <div class="c-overlay-wrapper">
-                                    <div class="c-overlay-content">
-                                        <a href="#">
-                                            <i class="icon-link"></i>
-                                        </a>
-                                        <a href="assets/base/img/content/team/team9.jpg" data-lightbox="fancybox" data-fancybox-group="gallery-4">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <img class="c-overlay-object img-responsive" src="assets/base/img/content/team/team9.jpg" alt=""> </div>
-                            <div class="c-body">
-                                <div class="c-head">
-                                    <div class="c-name c-font-uppercase c-font-bold">Kate Doe</div>
-                                    <ul class="c-socials c-theme-ul">
-                                        <li>
-                                            <a href="#">
-                                                <i class="icon-social-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="icon-social-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="icon-social-dribbble"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="c-position"> CEO, Philly </div>
-                                <p> Lorem ipsum dolor sit amet, dolor nemo amet elit. Nulla nemo consequuntur. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 c-margin-b-30">
-                        <div class="c-content-person-1 c-option-2">
-                            <div class="c-caption c-content-overlay">
-                                <div class="c-overlay-wrapper">
-                                    <div class="c-overlay-content">
-                                        <a href="#">
-                                            <i class="icon-link"></i>
-                                        </a>
-                                        <a href="assets/base/img/content/team/team8.jpg" data-lightbox="fancybox" data-fancybox-group="gallery-4">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <img class="c-overlay-object img-responsive" src="assets/base/img/content/team/team8.jpg" alt=""> </div>
-                            <div class="c-body">
-                                <div class="c-head">
-                                    <div class="c-name c-font-uppercase c-font-bold">Lara Web</div>
-                                    <ul class="c-socials c-theme-ul">
-                                        <li>
-                                            <a href="#">
-                                                <i class="icon-social-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="icon-social-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="icon-social-dribbble"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="c-position"> CEO, JANGO Inc. </div>
-                                <p> Lorem ipsum dolor sit amet, dolor nemo amet elit. Nulla nemo consequuntur. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End-->
-                </div>
-                <!-- End-->
+            </div>
+            <div class="uk-width-1-3">
+                <div class="team-pic"><img class="team-img uk-border-circle" src="/img/team1.jpg" style="width: 230px;height: 230px;"></div>
             </div>
         </div>
-        <!-- END: CONTENT/MISC/TEAM-3 -->
+
+
+        <div class="uk-clearfix"></div>
+
+        <div class="uk-grid uk-margin team bg2 uk-margin-large-top">
+            <div class="uk-width-1-3">
+                <div class="team-pic"><img class="team-img uk-border-circle" src="/img/team4.jpg" style="width: 230px;height: 230px;"></div>
+            </div>
+            <div class="uk-width-2-3">
+                <div class="inner">
+                    <div class="team-h1 uk-margin-large-top">阚 达<span>总监/证券投资部</span></div>
+                    <div class="team-text uk-margin-large-top">北京外国语大学双学士，金砖华荣投资
+                        总监。曾先后任职于八阳资产、中欧瑞
+                        博、中证投资、KPMG，09年进入资管
+                        行业。8年证券投资从业经验，擅长成长
+                        股及主题型投资。风格稳健灵活，在追
+                        寻超额收益的同时，对风险及回撤有着
+                        较好的控制。
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="uk-clearfix"></div>
+
+        <div class="uk-grid uk-margin team1 uk-margin-large-top">
+            <div class="uk-width-2-3">
+                <div class="inner">
+                    <div class="team-h1 uk-margin-large-top">孙 东旭<span>产品经理/产品研发部</span></div>
+                    <div class="team-text uk-margin-large-top">新加坡南洋理工大学金融硕士。基金从
+                        业者。具有丰富的投资研发以及数据分
+                        析从业经验。着手进行了多个私募基金
+                        产品研发，产品类型齐全。 有多个制定
+                        股权投资基金、产业并购基金，IPO等各
+                        类VC、PE基金的发起设立规划经历。
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-3">
+                <div class="team-pic"><img class="team-img uk-border-circle" src="/img/team7.jpg" style="width: 230px;height: 230px;"></div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div><!--end about-->
 @stop

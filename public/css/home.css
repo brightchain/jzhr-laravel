@@ -88,14 +88,16 @@
 	width: 170px;
 	height: 90px; }
 
-.news-box-img img{
+.news-box-img img,
+.team-img a img{
 	-webkit-transition: -webkit-transform .1s;
 	transition: -webkit-transform .1s;
 	-o-transition: transform .1s;
 	transition: transform .1s;
 	transition: transform .1s,-webkit-transform .1s;  }
 
-.news-box-img:hover img {
+.news-box-img:hover img,
+.team a:hover img{
 	-webkit-transform: scale(.99);
 	-ms-transform: scale(.99);
 	transform: scale(.99)  }

@@ -1,35 +1,35 @@
 @extends('common.layouts')
-@section('title',$title)
-@section('style')
-    <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
-    <!--<link href="css/socicon.css" rel="stylesheet" type="text/css" /> -->
-    <link href="../css/bootstrap-social.css" rel="stylesheet" type="text/css" />
-    <link href="../css/font-awesome.min.css"" rel="stylesheet" type="text/css" />
-    <link href="../css/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
-    <link href="../css/animate.min.css" rel="stylesheet" type="text/css" />
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <!-- END GLOBAL MANDATORY STYLES -->
-    <!-- BEGIN: BASE PLUGINS  -->
-    <link href="../css/settings.css" rel="stylesheet" type="text/css" />
-    <link href="../css/layers.css" rel="stylesheet" type="text/css" />
-    <link href="../css/navigation.css" rel="stylesheet" type="text/css" />
-    <link href="../css/cubeportfolio.min.css" rel="stylesheet" type="text/css" />
-    <link href="../css/owl.carousel.css" rel="stylesheet" type="text/css" />
-    <link href="../css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
-    <link href="../css/slider.css" rel="stylesheet" type="text/css" />
-    <!-- END: BASE PLUGINS -->
-    <!-- BEGIN: PAGE STYLES -->
-    <link href="../css/ilightbox.css" rel="stylesheet" type="text/css" />
-    <!-- END: PAGE STYLES -->
-    <!-- BEGIN THEME STYLES -->
-    <link href="../css/plugins.css" rel="stylesheet" type="text/css" />
-    <link href="../css/components.css" id="style_components" rel="stylesheet" type="text/css" />
-    <link href="../css/default.css" rel="stylesheet" id="style_theme" type="text/css" />
-    <link href="../css/custom.css" rel="stylesheet" type="text/css" />
-@stop
-@section('banner')
-    @include('about.banner')
-@stop
 @section('content')
-@stop
+
+<div class="about-banner" style="background-image: url(/img/about.jpg)">
+    <div class="m-bg">
+        <div class="uk-container uk-container-center uk-text-left">
+            <div class="uk-grid">
+                <div class="uk-width-1-4 uk-padding-remove">
+                    <h1>关于我们<br>
+                    about us</h1>
+                </div>
+                <div class="uk-width-3-4 uk-text-right">
+                    <h3>正行笃实、运筹制胜、诚信善为</h3>
+                    <h4>——共享财富盛宴，铸造人生价值</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div><!--end banner-->
+<div class="menu-bar">
+    <div class="uk-container uk-container-center uk-text-center">
+        <div>
+            <li class="{{ Request::is('*company*') ? 'uk-active' : '' }}"><a href="{{route('company')}}">关于金砖</a></li>
+            <li class="{{ Request::is('*team*') ? 'uk-active' : '' }}"><a href="{{route('team')}}">专业团队</a></li>
+            <li class="{{ Request::is('rik*') ? 'uk-active' : '' }}"><a href="team.php">合规风控</a></li>
+            <li class="{{ Request::is('wenh*') ? 'uk-active' : '' }}"><a href="culture.php">企业文化</a></li>
+        </div>
+    </div>
+</div><!--end menu-bar-->
+
+
+@section('text-content')
+    @show
+@endsection
