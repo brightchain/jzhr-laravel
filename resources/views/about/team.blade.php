@@ -72,10 +72,5 @@
         </div>
 
 
-
-
-
-
-
     </div><!--end about-->
 @stop

@@ -34,5 +34,51 @@
                     持续创新 科学投资</div>
             </div>
         </div>
+        <div class="about-text uk-margin-top uk-text-center uk-margin-large-top " style="padding-top: 40px;">
+            <div class="uk-h1 title-line uk-margin-top">
+                发展历程</div>
+            <div class="dashi uk-container-center">
+                <dl class="uk-clearfix">
+                    <dt>2015年</dt>
+                    <dd>
+                        <i></i>
+                        <div class="ueditor_content_parse">
+                            <div class="titem uk-clearfix">
+                                <span class="d">01月</span>
+                                <span class="t">深圳金砖华荣资产 管理有限公司成立，注册资本3000万元。</span>
+                            </div></div>
+                    </dd>
+                </dl>
+                <dl class="uk-clearfix">
+                    <dt>2016年</dt>
+                    <dd>
+                        <i></i>
+                        <div class="ueditor_content_parse">
+                            <div class="titem uk-clearfix">
+                                <span class="d">07月05日</span>
+                                <span class="t">正式加入中国证券投资基金业协会。</span>
+                            </div>
+                            <div class="titem uk-clearfix">
+                                <span class="d">08月12日</span>
+                                <span class="t">金砖华荣卓越一号私募投资基金在中国证券基金业协会完成备案。</span>
+                            </div>
+                            <div class="titem uk-clearfix">
+                                <span class="d">11月26日</span>
+                                <span class="t">金砖荣投二号私募股权投资基金成立。</span>
+                            </div>
+                            <div class="titem uk-clearfix">
+                                <span class="d">12月06日</span>
+                                <span class="t">金砖金汇一号私募股权投资基金成立。</span>
+                            </div>
+                            <div class="titem uk-clearfix">
+                                <span class="d">12月23日</span>
+                                <span class="t">金砖衡盛生物IPO股权投资已成立</span>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+
+        </div>
     </div>
     @stop

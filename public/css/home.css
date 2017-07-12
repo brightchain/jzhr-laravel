@@ -121,3 +121,13 @@
 .news-date{
 	float: right;
 }
+
+/*大事记*/
+.dashi{width:850px;}
+.dashi dl dt{width:95px;height:100%;color:#9c7747;font-weight:bold;float:left;padding-left:5px}
+.dashi dl dd{width:740px;float:left;border-left:1px solid #c79a5a;padding-bottom:50px;position:relative;}
+.dashi dl dd i{display:block;position:absolute;width:23px;height:23px;top:0;left:-12px;background:url("/img/gongsi_back.png") 0 0 no-repeat}
+.dashi dl dd .titem span{display:block;float:left;}
+.dashi dl dd .titem{margin-bottom:5px}
+.dashi dl dd .titem span.d{width:100px;padding-top:5px;text-align:right;padding-left:30px;}
+.dashi dl dd .titem span.t{width:540px;padding-left:40px;text-align: left;}

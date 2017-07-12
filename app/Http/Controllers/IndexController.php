@@ -25,8 +25,10 @@ class IndexController extends Controller
         });
         $values->all();
 
-
+        //$me=DB::table('admin_menu AS a')->join('admin_menu AS b','a.id','=','b.parent_id')->get();
+       // $menus=$me->groupBy('parent_id');
         $nav=DB::table('admin_menu')->where('parent_id',15)->get();
-        return view('index',compact('slides','name','values','nav'));
+        return view('index',compact('menus','name','values','nav'));
     }
 }
+

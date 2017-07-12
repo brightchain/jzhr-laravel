@@ -4,8 +4,8 @@
 <head>
     <title>{{Admin::title()}}|{{$title}}</title>
 
-
 @include('common.header')
+
     @section('content')
         @show
 
