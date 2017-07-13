@@ -13,6 +13,7 @@
 
 Route::get('/', 'IndexController@index');
 
+//关于金砖
 Route::get('/about','AboutController@about')->name('about');
 
 Route::get('/about/company','AboutController@company')->name('company');

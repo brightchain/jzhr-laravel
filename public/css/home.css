@@ -131,3 +131,17 @@
 .dashi dl dd .titem{margin-bottom:5px}
 .dashi dl dd .titem span.d{width:100px;padding-top:5px;text-align:right;padding-left:30px;}
 .dashi dl dd .titem span.t{width:540px;padding-left:40px;text-align: left;}
+
+/*投资理念*/
+.ul-concept{
+	margin-top: 60px;
+}
+.ul-concept li{
+	margin-bottom: 30px;
+}
+.concept-span{
+	padding-right:20px;
+	padding-bottom:10px;
+	border-bottom: 2px solid #9c7747;
+	color: #9c7747
+}

@@ -66,7 +66,7 @@
                                     <ul class="uk-nav uk-nav-navbar">
                                         <li><a href="{{route('company')}}">公司简介</a></li>
                                         <li><a href="{{route('team')}}">专业团队</a></li>
-                                        <li><a href="{{route('team')}}">专业团队</a></li>
+                                        <li><a href="{{route('concept')}}">投资理念</a></li>
                                         <li><a href="#">企业文化</a></li>
                                     </ul>
                                 </div>

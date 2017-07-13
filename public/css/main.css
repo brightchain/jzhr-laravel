@@ -1228,14 +1228,14 @@ table {
 	display:inline-block;
 	width:38.2%;
 	height:260px;
-	background-color:#eecf9c}
+	background-color:#c79a5a}
 
 .w618{
 	display:inline-block;
 	float:right;
 	width:61.8%;
 	height:260px;
-	background-image:url(../images/about/w1.jpg);
+	background-image:url(/img/risk1.png);
 	background-repeat:no-repeat;
 	background-size:cover;}
 .w382 .inner{
@@ -1266,10 +1266,10 @@ table {
 .wh-val{
 	width:auto;
 	height:305px;
-	background-image:url(../images/about/w3.jpg);
+	background-image:url(/img/risk5.png);
 	background-repeat:no-repeat;
 	background-size:cover;
-	color:#eda50e;
+	color:#9c7747;
 }
 .wh-val .title{
 	margin-top:80px;}

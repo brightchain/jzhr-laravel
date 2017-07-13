@@ -23,8 +23,8 @@
         <div>
             <li class="{{ Request::is('*company*') ? 'uk-active' : '' }}"><a href="{{route('company')}}">关于金砖</a></li>
             <li class="{{ Request::is('*team*') ? 'uk-active' : '' }}"><a href="{{route('team')}}">专业团队</a></li>
-            <li class="{{ Request::is('rik*') ? 'uk-active' : '' }}"><a href="team.php">合规风控</a></li>
-            <li class="{{ Request::is('wenh*') ? 'uk-active' : '' }}"><a href="culture.php">企业文化</a></li>
+            <li class="{{ Request::is('*concept*') ? 'uk-active' : '' }}"><a href="{{route('concept')}}">投资理念</a></li>
+            <li class="{{ Request::is('*risk*') ? 'uk-active' : '' }}"><a href="{{route('risk')}}">核心优势</a></li>
         </div>
     </div>
 </div><!--end menu-bar-->
