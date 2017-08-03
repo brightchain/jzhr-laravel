@@ -4,8 +4,7 @@
     <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
 
         <div class="about-text uk-margin-top uk-text-center uk-margin-large-top wh">
-            <div class="uk-h1 title-line uk-margin-top uk-margin-large-bottom">
-                核心优势</div>
+
             <div class="uk-clearfix">
                 &nbsp;</div>
             <div class="w382">
@@ -19,11 +18,9 @@
                 </div>
             </div>
             <div class="w618">
-                &nbsp;</div>
+            </div>
             <div class="uk-clearfix uk-margin-large-bottom">
-                &nbsp;</div>
-            <div class="uk-clearfix uk-margin-large-bottom">
-                &nbsp;</div>
+            </div>
             <div class="inner">
                 <div class="title">
                     严格成熟的风控模式</div>
@@ -35,8 +32,6 @@
                 <div class="uk-margin-top">
                     <img src="/img/risk2.jpg" /></div>
             </div>
-            <div class="uk-clearfix uk-margin-large-bottom">
-                &nbsp;</div>
             <div class="uk-clearfix uk-margin-large-bottom">
                 &nbsp;</div>
             <div class="wh-val">

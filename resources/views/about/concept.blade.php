@@ -2,8 +2,7 @@
 @section('text-content')
     <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
         <div class="about-text uk-margin-top uk-text-center uk-margin-large-top ">
-            <div class="uk-h1 title-line uk-margin-top">
-                投资理念</div>
+
             <ul class="ul-concept">
                 <li class="uk-clearfix">
                     <div class="uk-align-left">

@@ -4,9 +4,7 @@
     <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
 
 
-        <div class="about-text uk-margin-top uk-text-center uk-margin-large-top ">
-            <div class="uk-h1 title-line uk-margin-top uk-clearfix">专业团队</div>
-        </div>
+
 
         <div class="uk-clearfix"></div>
 

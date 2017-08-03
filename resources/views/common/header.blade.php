@@ -58,7 +58,9 @@
             <div class="uk-width-1-5 uk-padding-remove"><div class="logo"><a href="./"><img src="/img/logo-3.png" alt="金砖华荣官网官网" title="金砖华荣官网官网"></a></div></div>
             <div class="uk-width-4-5">
                 <nav class="uk-navbar">
+
                     <div class="uk-navbar-flip">
+
                         <ul class="uk-navbar-nav">
                             <li><a href="/">首页</a></li>
                             <li class="uk-parent" data-uk-dropdown><a href="{{route('about')}}">关于金砖</a>
@@ -71,21 +73,21 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="uk-parent" data-uk-dropdown><a href="#">产品服务</a>
+                            <li class="uk-parent" data-uk-dropdown><a href="{{route('fund')}}">产品服务</a>
                                 <div class="uk-dropdown uk-dropdown-navbar">
                                     <ul class="uk-nav uk-nav-navbar">
-                                        <li><a href="#">业务范围</a></li>
-                                        <li><a href="#">在售产品</a></li>
-                                        <li><a href="#">信息披露</a></li>
+                                        <li><a href="#">股权投资</a></li>
+                                        <li><a href="#">房地产投资</a></li>
+                                        <li><a href="#">定向增发</a></li>
+                                        <li><a href="#">并购（M&A）</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li class="uk-parent" data-uk-dropdown><a href="#">风险管理</a>
+                            <li class="uk-parent" data-uk-dropdown><a href="#">业务范围</a>
                                 <div class="uk-dropdown uk-dropdown-navbar">
                                     <ul class="uk-nav uk-nav-navbar">
-                                        <li><a href="#">风控体系</a></li>
-                                        <li><a href="#">风控流程</a></li>
-                                        <li><a href="#">合规管理</a></li>
+                                        <li><a href="#">业务范围</a></li>
+
                                     </ul>
                                 </div>
                             </li>

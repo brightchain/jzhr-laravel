@@ -7,6 +7,7 @@ use App\Slide;
 use App\Webinfo;
 use Illuminate\Support\Facades\DB;
 
+
 class IndexController extends Controller
 {
 
@@ -25,8 +26,7 @@ class IndexController extends Controller
         });
         $values->all();
 
-        //$me=DB::table('admin_menu AS a')->join('admin_menu AS b','a.id','=','b.parent_id')->get();
-       // $menus=$me->groupBy('parent_id');
+
         $nav=DB::table('admin_menu')->where('parent_id',15)->get();
         return view('index',compact('menus','name','values','nav'));
     }

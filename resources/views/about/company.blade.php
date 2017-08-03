@@ -1,9 +1,8 @@
 @extends('about.about')
 @section('text-content')
-    <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+
         <div class="about-text uk-margin-top uk-text-center uk-margin-large-top ">
-            <div class="uk-h1 title-line uk-margin-top">
-                公司简介</div>
+
             <p class="uk-margin-large-top">
                 <img src="/img/company.jpg" /></p>
             <p>深圳金砖华荣资产管理有限公司（中基协私募基金管理人编号：P1014425）
@@ -80,5 +79,5 @@
             </div>
 
         </div>
-    </div>
+
     @stop

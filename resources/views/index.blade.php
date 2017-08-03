@@ -1,5 +1,6 @@
 @extends('common.layouts')
 @section('content')
+
     <div class="banner">
 
         <div class="uk-slidenav-position" data-uk-slideshow="{autoplay:true}">

@@ -3,6 +3,9 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use function Sodium\add;
+use Spatie\Menu\Link;
+use Spatie\Menu\Menu;
 
 
 class AppServiceProvider extends ServiceProvider
@@ -14,7 +17,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        view()->share('title', '首页');
+
+        
+        $title='首页';
+
+        view()->share(compact('menu','title'));
 
     }
 
