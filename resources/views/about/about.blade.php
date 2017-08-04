@@ -20,7 +20,7 @@
 </div><!--end banner-->
 
 <div class="uk-container uk-container-center  uk-margin-large-bottom">
-<div class="sub_left" >
+<div class="sub_left" data-uk-sticky="{top:50}">
     <div class="sub_left_title" >
         <div  class="columnSpace" >
             <div  class="FrontSpecifies_show01-d1_c1">

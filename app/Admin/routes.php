@@ -13,5 +13,6 @@ Route::group([
     $router->get('/', 'HomeController@index');
     $router->resource('slide', SlideController::class);
     $router->resource('webinfo', WebinfoController::class);
+    $router->resource('posts', PostsController::class);
 });
 

@@ -21,4 +21,9 @@ class FundController extends Controller
     {
         return view('fund.show');
     }
+
+    public function scope()
+    {
+        return view('fund.scope');
+    }
 }

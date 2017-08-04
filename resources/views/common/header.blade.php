@@ -13,6 +13,7 @@
 <script src="/js/uikit/components/slideshow.min.js"></script>
 <script src="/js/uikit/components/slideshow-fx.min.js"></script>
 <script src="/js/uikit/components/slider.min.js"></script>
+<script src="/js/uikit/sticky.min.js"></script>
 
 
 <link rel="stylesheet" href="/css/uikit/components/slideshow.min.css" />
@@ -83,7 +84,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="uk-parent" data-uk-dropdown><a href="#">业务范围</a>
+                            <li class="uk-parent" data-uk-dropdown><a href="{{route('scope')}}">业务范围</a>
                                 <div class="uk-dropdown uk-dropdown-navbar">
                                     <ul class="uk-nav uk-nav-navbar">
                                         <li><a href="#">业务范围</a></li>
@@ -91,15 +92,22 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="uk-parent" data-uk-dropdown><a href="#">媒体中心</a>
+                            <li class="uk-parent" data-uk-dropdown><a href="{{route('newsCompany')}}">新闻中心</a>
                                 <div class="uk-dropdown uk-dropdown-navbar">
                                     <ul class="uk-nav uk-nav-navbar">
-                                        <li><a href="#">媒体报道</a></li>
-                                        <li><a href="#">活动信息</a></li>
+                                        <li><a href="#">金砖动态</a></li>
+                                        <li><a href="#">行业资讯</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="#">客户中心</a></li>
+                            <li class="uk-parent" data-uk-dropdown><a href="{{route('newsCompany')}}">联系我们</a>
+                                <div class="uk-dropdown uk-dropdown-navbar">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                        <li><a href="#">联系我们</a></li>
+                                        <li><a href="#">招贤纳士</a></li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </nav>

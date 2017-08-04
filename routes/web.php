@@ -37,5 +37,10 @@ Route::get('/product','FundController@product')->name('product');
 
 Route::get('/product/{id}','FundController@show')->name('productshow');
 
+//新闻中心
+Route::get('/news','NewsController@company')->name('newsCompany');
+
+Route::get('/news/{id}','NewsController@show')->name('companyShow');
+
 //图片上传回调
 Route::any('/uploads','ImgController@upload')->name('upload');
