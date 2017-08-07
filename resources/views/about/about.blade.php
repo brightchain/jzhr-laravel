@@ -49,7 +49,7 @@
     <div class="sub_body">
         <div class="sub_mbx">
             <p>
-                您现在的位置：公司简介
+                您现在的位置：{{$title}}
             </p>
         </div>
         @section('text-content')

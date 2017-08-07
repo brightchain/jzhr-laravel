@@ -19,6 +19,7 @@ class NewsController extends Controller
         return view('news.center',compact('posts'));
     }
 
+    //公司新闻内容
     public function show($id)
     {
         $posts=Post::findOrFail($id);

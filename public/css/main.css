@@ -1306,7 +1306,7 @@ table {
 
 
 .team1{
-	background-color:#f2f2f2;
+
 	height:300px;
 	display:block;
 }
@@ -1334,7 +1334,7 @@ table {
 
 
 .bg2{
-	background-color:#f2f2f2;
+
 }
 
 @media (min-width: 1220px) {
@@ -1769,3 +1769,9 @@ table {
 .text-indent{
 	text-indent:2em;
 }
+/*地图组件*/
+.my-map { margin: 0 auto; width: 800px; height: 450px;padding-top: 40px; }
+.my-map .icon { background: url(http://lbs.amap.com/console/public/show/marker.png) no-repeat; }
+.my-map .icon-cir { height: 31px; width: 28px; }
+.my-map .icon-cir-red { background-position: -11px -5px; }
+.amap-container{height: 100%;}

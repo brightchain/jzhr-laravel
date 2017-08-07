@@ -14,7 +14,7 @@
 Route::get('/', 'IndexController@index');
 
 //关于金砖
-Route::get('/about','AboutController@about')->name('about');
+Route::get('/about','AboutController@company')->name('about');
 
 Route::get('/about/company','AboutController@company')->name('company');
 
@@ -41,6 +41,11 @@ Route::get('/product/{id}','FundController@show')->name('productshow');
 Route::get('/news','NewsController@company')->name('newsCompany');
 
 Route::get('/news/{id}','NewsController@show')->name('companyShow');
+
+//联系我们
+Route::get('/contact','ContactController@index')->name('contact');
+
+Route::get('/jobs','ContactController@jobs')->name('jobs');
 
 //图片上传回调
 Route::any('/uploads','ImgController@upload')->name('upload');

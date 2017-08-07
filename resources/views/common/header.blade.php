@@ -100,11 +100,11 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="uk-parent" data-uk-dropdown><a href="{{route('newsCompany')}}">联系我们</a>
+                            <li class="uk-parent" data-uk-dropdown><a href="{{route('contact')}}">联系我们</a>
                                 <div class="uk-dropdown uk-dropdown-navbar">
                                     <ul class="uk-nav uk-nav-navbar">
-                                        <li><a href="#">联系我们</a></li>
-                                        <li><a href="#">招贤纳士</a></li>
+                                        <li><a href="{{route('contact')}}">联系我们</a></li>
+                                        <li><a href="{{route('jobs')}}">招贤纳士</a></li>
                                     </ul>
                                 </div>
                             </li>

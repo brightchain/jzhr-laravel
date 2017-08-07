@@ -14,5 +14,7 @@ Route::group([
     $router->resource('slide', SlideController::class);
     $router->resource('webinfo', WebinfoController::class);
     $router->resource('posts', PostsController::class);
+    $router->resource('company',CompanyController::class);
+    $router->resource('teams',TeamsController::class);
 });
 
