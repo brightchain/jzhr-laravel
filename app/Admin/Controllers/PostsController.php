@@ -85,6 +85,7 @@ class PostsController extends Controller
             $grid->column('top')->switchGroup([
                 'top' => '首页显示',
             ], $states);
+            $grid->clicks('阅读量');
             $grid->created_at('创建时间');
             $grid->updated_at('更新时间');
             $grid->created_at();
@@ -112,6 +113,7 @@ class PostsController extends Controller
             $form->image('thumbs','缩略图');
             $form->editor('content','内容');
             $form->number('order','排序');
+            $form->number('clicks','阅读量')->default('1');
             $form->display('created_at', 'Created At');
             $form->display('updated_at', 'Updated At');
         });

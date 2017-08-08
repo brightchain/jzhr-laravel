@@ -15,7 +15,7 @@ class NewsController extends Controller
         $posts=Post::where('columns','j')
             ->orderBy('order')
             ->orderBy('updated_at','desc')
-            ->paginate(4);
+            ->paginate(2);
         return view('news.center',compact('posts'));
     }
 

@@ -35,7 +35,7 @@
                         <div class="menu-first">
                             <ul class="list2">
                                 <li class=" menu-none"><a  href="{{route('newsCompany')}}" title="业务范围" class="menu-text1 {{ Request::is('*newsCompany*') ? 'current' : '' }}">金砖动态</a></li>
-                                <li class="menu-none"><a  href="{{route('product')}}" title="专业团队" class="menu-text1 {{ Request::is('*product*') ? 'current' : '' }} ">房地产投资</a></li>
+                                <li class="menu-none"><a  href="" title="专业团队" class="menu-text1 {{ Request::is('*product*') ? 'current' : '' }} ">房地产投资</a></li>
 
                             </ul>
                         </div>

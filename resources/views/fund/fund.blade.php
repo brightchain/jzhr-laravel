@@ -36,9 +36,9 @@
                         <div class="menu-first">
                             <ul class="list2">
                                 <li class=" menu-none"><a  href="{{route('stock')}}" title="业务范围" class="menu-text1 {{ Request::is('*stock*') ? 'current' : '' }}">股权投资</a></li>
-                                <li class="menu-none"><a  href="{{route('product')}}" title="专业团队" class="menu-text1 {{ Request::is('*product*') ? 'current' : '' }} ">房地产投资</a></li>
-                                <li class="menu-none"><a  href="{{route('product')}}" title="专业团队" class="menu-text1 {{ Request::is('*product*') ? 'current' : '' }} ">定向增发</a></li>
-                                <li class="menu-none"><a  href="{{route('product')}}" title="专业团队" class="menu-text1 {{ Request::is('*product*') ? 'current' : '' }} ">并购（ M&A ）</a></li>
+                                <li class="menu-none"><a  href="{{route('real')}}" title="专业团队" class="menu-text1 {{ Request::is('*real*') ? 'current' : '' }} ">房地产投资</a></li>
+                                <li class="menu-none"><a  href="{{route('placement')}}" title="专业团队" class="menu-text1 {{ Request::is('*placement*') ? 'current' : '' }} ">定向增发</a></li>
+                                <li class="menu-none"><a  href="{{route('merger')}}" title="专业团队" class="menu-text1 {{ Request::is('*merger*') ? 'current' : '' }} ">并购（ M&A ）</a></li>
                             </ul>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
         <div class="sub_body">
             <div class="sub_mbx">
                 <p>
-                    您现在的位置：公司简介
+                    您现在的位置：{{$title}}
                 </p>
             </div>
             @section('text-content')

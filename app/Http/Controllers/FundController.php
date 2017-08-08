@@ -2,28 +2,56 @@
 
 namespace App\Http\Controllers;
 
+use App\Model\Product;
 use Illuminate\Http\Request;
 
 class FundController extends Controller
 {
     //
-    public function index()
-    {
-       return view('fund.product');
-    }
-
     public function stock()
     {
-        return view('fund.product');
+        $funds=Product::where('type','1')
+            ->orderBy('order')
+            ->orderBy('updated_at')
+            ->paginate(4);
+        $title='股权投资';
+        return view('fund.product',compact('funds','title'));
     }
 
-    public function show()
+    public function show($id)
     {
-        return view('fund.show');
+        $funds=Product::findOrFail($id);
+        $title='股权投资';
+        return view('fund.show',compact('funds','title'));
     }
 
-    public function scope()
+    public function real()
     {
-        return view('fund.scope');
+        $funds=Product::where('type','2')
+            ->orderBy('order')
+            ->orderBy('updated_at')
+            ->paginate(4);
+        $title='房地产投资';
+        return view('fund.product',compact('funds','title'));
+    }
+
+    public function placement()
+    {
+        $funds=Product::where('type','3')
+            ->orderBy('order')
+            ->orderBy('updated_at')
+            ->paginate(4);
+        $title='定向增发';
+        return view('fund.product',compact('funds','title'));
+    }
+
+    public function merger()
+    {
+        $funds=Product::where('type','4')
+            ->orderBy('order')
+            ->orderBy('updated_at')
+            ->paginate(4);
+        $title='并购（M&A）';
+        return view('fund.product',compact('funds','title'));
     }
 }

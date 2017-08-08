@@ -25,17 +25,15 @@ Route::get('/about/team','AboutController@team')->name('team');
 Route::get('/about/risk','AboutController@risk')->name('risk');
 
 //产品服务
-route::get('/scope','FundController@scope')->name('scope');
-
-Route::get('/fund','FundController@index')->name('fund');
-
 Route::get('/stock','FundController@stock')->name('stock');
 
-Route::get('/stock/{id}','FundController@show')->name('stockshow');
+route::get('/real','FundController@real')->name('real');
 
-Route::get('/product','FundController@product')->name('product');
+Route::get('/placement','FundController@placement')->name('placement');
 
-Route::get('/product/{id}','FundController@show')->name('productshow');
+Route::get('/merger','FundController@merger')->name('merger');
+
+Route::get('/fund/{id}','FundController@show')->name('fundshow');
 
 //新闻中心
 Route::get('/news','NewsController@company')->name('newsCompany');

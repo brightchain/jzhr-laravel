@@ -74,17 +74,17 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="uk-parent" data-uk-dropdown><a href="{{route('fund')}}">产品服务</a>
+                            <li class="uk-parent" data-uk-dropdown><a href="{{route('stock')}}">产品服务</a>
                                 <div class="uk-dropdown uk-dropdown-navbar">
                                     <ul class="uk-nav uk-nav-navbar">
-                                        <li><a href="#">股权投资</a></li>
-                                        <li><a href="#">房地产投资</a></li>
-                                        <li><a href="#">定向增发</a></li>
-                                        <li><a href="#">并购（M&A）</a></li>
+                                        <li><a href="{{route('stock')}}">股权投资</a></li>
+                                        <li><a href="{{route('real')}}">房地产投资</a></li>
+                                        <li><a href="{{route('placement')}}">定向增发</a></li>
+                                        <li><a href="{{route('merger')}}">并购（M&A）</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li class="uk-parent" data-uk-dropdown><a href="{{route('scope')}}">业务范围</a>
+                            <li class="uk-parent" data-uk-dropdown><a href="#">业务范围</a>
                                 <div class="uk-dropdown uk-dropdown-navbar">
                                     <ul class="uk-nav uk-nav-navbar">
                                         <li><a href="#">业务范围</a></li>

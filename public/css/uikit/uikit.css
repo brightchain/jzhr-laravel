@@ -2367,7 +2367,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
  * Active
  */
 .uk-pagination > .uk-active > span {
-  background: #00a8e6;
+  background: #cc9966;
   color: #ffffff;
 }
 /*
