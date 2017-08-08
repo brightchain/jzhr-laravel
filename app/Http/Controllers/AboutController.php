@@ -34,8 +34,8 @@ class AboutController extends Controller
     {
 
         $teams=Team::orderBy('order')->orderBy('updated_at','DESC')->get();
-
-        return view('about.team',compact('teams'));
+         $title="管理团队";
+        return view('about.team',compact('teams','title'));
     }
 
 

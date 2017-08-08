@@ -9,23 +9,37 @@ use Visitor;
 
 class NewsController extends Controller
 {
-    //公司新闻
+    //金砖动态
     public function company()
     {
         $posts=Post::where('columns','j')
             ->orderBy('order')
             ->orderBy('updated_at','desc')
-            ->paginate(2);
-        return view('news.center',compact('posts'));
+            ->paginate(6);
+        $title="金砖动态";
+
+        return view('news.center',compact('posts','title'));
     }
 
-    //公司新闻内容
+    //行业资讯
+    public function trade()
+    {
+        $posts=Post::where('columns','h')
+            ->orderBy('order')
+            ->orderBy('updated_at','desc')
+            ->paginate(6);
+        $title='行业资讯';
+
+        return view('news.center',compact('posts','title'));
+    }
+
+    //新闻内容
     public function show($id)
     {
         $posts=Post::findOrFail($id);
         Post::findOrFail($id)->increment('clicks', 3);
-
-        return view('news.show',compact('posts'));
+        $title=$posts->title;
+        return view('news.show',compact('posts','title'));
 
     }
 }

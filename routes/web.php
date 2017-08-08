@@ -35,10 +35,15 @@ Route::get('/merger','FundController@merger')->name('merger');
 
 Route::get('/fund/{id}','FundController@show')->name('fundshow');
 
-//新闻中心
-Route::get('/news','NewsController@company')->name('newsCompany');
+//业务范围
+Route::get('/scope','FundController@scope')->name('scope');
 
-Route::get('/news/{id}','NewsController@show')->name('companyShow');
+//新闻中心
+Route::get('/news','NewsController@company')->name('news');
+
+Route::get('/trade','NewsController@trade')->name('trade');
+
+Route::get('/news/{id}','NewsController@show')->name('newShow');
 
 //联系我们
 Route::get('/contact','ContactController@index')->name('contact');

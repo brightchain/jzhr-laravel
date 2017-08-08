@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Model\Company;
 use App\Model\Product;
 use Illuminate\Http\Request;
 
@@ -21,7 +22,7 @@ class FundController extends Controller
     public function show($id)
     {
         $funds=Product::findOrFail($id);
-        $title='股权投资';
+        $title=$funds->title;
         return view('fund.show',compact('funds','title'));
     }
 
@@ -53,5 +54,13 @@ class FundController extends Controller
             ->paginate(4);
         $title='并购（M&A）';
         return view('fund.product',compact('funds','title'));
+    }
+
+    //业务范围
+    public function scope()
+    {
+        $scope=Company::where('name','scope')->first();
+        $title=$scope->title;
+        return view('fund.scope',compact('scope','title'));
     }
 }

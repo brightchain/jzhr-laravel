@@ -10,6 +10,7 @@ use Encore\Admin\Facades\Admin;
 use Encore\Admin\Layout\Content;
 use App\Http\Controllers\Controller;
 use Encore\Admin\Controllers\ModelForm;
+use Intervention\Image\ImageManager;
 
 class PostsController extends Controller
 {
@@ -110,7 +111,8 @@ class PostsController extends Controller
                 'off' => ['value' => 0, 'text' => 'OFF', 'color' => 'danger'],
             ];
             $form->switch('top','首页显示')->states($states)->default('1');
-            $form->image('thumbs','缩略图');
+
+            $form->image('thumbs','缩略图')->resize(174, 121);
             $form->editor('content','内容');
             $form->number('order','排序');
             $form->number('clicks','阅读量')->default('1');

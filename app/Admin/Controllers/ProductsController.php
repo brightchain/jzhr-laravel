@@ -10,6 +10,7 @@ use Encore\Admin\Facades\Admin;
 use Encore\Admin\Layout\Content;
 use App\Http\Controllers\Controller;
 use Encore\Admin\Controllers\ModelForm;
+use Intervention\Image\ImageManager;
 
 class ProductsController extends Controller
 {
@@ -77,6 +78,14 @@ class ProductsController extends Controller
             $grid->title('产品名称');
             $grid->type('所属栏目');
             $grid->profit('预期收益');
+            $states = [
+                'on' => ['text' => 'YES'],
+                'off' => ['text' => 'NO'],
+            ];
+
+            $grid->column('top')->switchGroup([
+                'top' => '首页显示',
+            ], $states);
             $grid->order('排序');
             $grid->created_at();
             $grid->updated_at();
@@ -95,7 +104,12 @@ class ProductsController extends Controller
             $form->display('id', 'ID');
             $form->text('title','基金名称');
             $form->select('type','所属栏目')->options([1 => '股权投资', 2 => '房地产投资', 3 => '定向增发', 4 => '并购（M&A）']);
-            $form->image('thumbs','产品图片');
+            $form->image('thumbs','产品图片')->resize(300,193);
+            $states = [
+                'on'  => ['value' => 1, 'text' => 'ON', 'color' => 'success'],
+                'off' => ['value' => 0, 'text' => 'OFF', 'color' => 'danger'],
+            ];
+            $form->switch('top','首页显示')->states($states)->default('1');
             $form->textarea('description','产品亮点')->rows(4);
             $form->text('productType','产品类型');
             $form->text('manager','基金管理人');

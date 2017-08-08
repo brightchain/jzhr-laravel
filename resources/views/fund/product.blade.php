@@ -31,5 +31,5 @@
 @endforeach
 
     </ul>
-{!! $funds->links() !!}
+    {{ $funds->links() }}
 @stop

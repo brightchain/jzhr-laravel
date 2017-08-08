@@ -8,6 +8,7 @@
         "php": ">=5.6.4",
         "barryvdh/laravel-ide-helper": "^2.4",
         "encore/laravel-admin": "1.4.*",
+        "intervention/image": "^2.4",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
         "spatie/laravel-menu": "^2.1",

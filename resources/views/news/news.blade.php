@@ -34,8 +34,8 @@
                     <div class="FrontComContent_list01-d1_c1">
                         <div class="menu-first">
                             <ul class="list2">
-                                <li class=" menu-none"><a  href="{{route('newsCompany')}}" title="业务范围" class="menu-text1 {{ Request::is('*newsCompany*') ? 'current' : '' }}">金砖动态</a></li>
-                                <li class="menu-none"><a  href="" title="专业团队" class="menu-text1 {{ Request::is('*product*') ? 'current' : '' }} ">房地产投资</a></li>
+                                <li class=" menu-none"><a  href="{{route('news')}}" title="金砖动态" class="menu-text1 {{ Request::is('*news*') ? 'current' : '' }}">金砖动态</a></li>
+                                <li class="menu-none"><a  href="{{route('trade')}}" title="行业资讯" class="menu-text1 {{ Request::is('*trade*') ? 'current' : '' }} ">行业资讯</a></li>
 
                             </ul>
                         </div>
@@ -46,7 +46,7 @@
         <div class="sub_body">
             <div class="sub_mbx">
                 <p>
-                    您现在的位置：公司简介
+                    您现在的位置：{{$title}}
                 </p>
             </div>
             @section('text-content')
