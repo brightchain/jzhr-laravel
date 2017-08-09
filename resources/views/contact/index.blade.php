@@ -64,19 +64,20 @@
     </script>
     <div class="uk-grid uk-margin-large uk-container-center">
         <div class="uk-width-1-1">
-            <h3>联系方式</h3>
-            <p>
-                <i class="uk-icon-phone"></i>&nbsp; 0755-82986278
-            </p>
-            <p>
-                <i class="uk-icon-tty"></i>&nbsp; 0755-82986286
-            </p>
-            <p>
-                <i class="uk-icon-envelope-o"></i>&nbsp; manager@chinajzhr.com
-            </p>
-            <p>
-                <i class="uk-icon-map-marker"></i>&nbsp; 深圳市福田区中心3路大中华国际交易广场西区14楼
-            </p>
+            {{--<h3>联系方式</h3>--}}
+            {{--<p>--}}
+                {{--<i class="uk-icon-phone"></i>&nbsp; 0755-82986278--}}
+            {{--</p>--}}
+            {{--<p>--}}
+                {{--<i class="uk-icon-tty"></i>&nbsp; 0755-82986286--}}
+            {{--</p>--}}
+            {{--<p>--}}
+                {{--<i class="uk-icon-envelope-o"></i>&nbsp; manager@chinajzhr.com--}}
+            {{--</p>--}}
+            {{--<p>--}}
+                {{--<i class="uk-icon-map-marker"></i>&nbsp; 深圳市福田区中心3路大中华国际交易广场西区14楼--}}
+            {{--</p>--}}
+            {!! $contacts->content !!}
         </div>
 
     </div>

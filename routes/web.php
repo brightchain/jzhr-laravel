@@ -52,3 +52,6 @@ Route::get('/jobs','ContactController@jobs')->name('jobs');
 
 //图片上传回调
 Route::any('/uploads','ImgController@upload')->name('upload');
+
+//合规投资者认定
+Route::any('/invest','InvestController@invest')->name('invest');

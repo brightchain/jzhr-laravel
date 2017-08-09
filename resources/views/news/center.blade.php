@@ -40,9 +40,9 @@
         {{--</div>--}}
     {{--</div>--}}
 @foreach($posts as $post)
-    <div class="uk-width-1-1 uk-margin-large-bottom news-center">
+    <div class="uk-width-1-1 uk-margin-large-bottom news-center ">
         <div class="uk-grid uk-grid-small">
-            <div class="uk-width-1-5"><a href=""><img src="/upload/{{$post->thumbs}}"></a></div>
+            <div class="uk-width-1-5"><a href="{{route('newShow',$post->id)}}"><img src="/upload/{{$post->thumbs}}"></a></div>
             <div class="uk-width-7-10 uk-margin-left">
                 <div class="ntitle"><a href="{{route('newShow',$post->id)}}">{{$post->title}}</a></div>
                 <div class="infos" style="height:48px; overflow:hidden">{{str_limit(strip_tags($post->content),150)}}</div>

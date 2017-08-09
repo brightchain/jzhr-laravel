@@ -17,10 +17,10 @@
                         <a href="{{route('team')}}">精英团队</a>
                     </li>
                     <li>
-                        <a href="#">产品与服务</a>
+                        <a href="{{route('stock')}}">产品与服务</a>
                     </li>
                     <li>
-                        <a href="#">工作机会</a>
+                        <a href="{{route('jobs')}}">工作机会</a>
                     </li>
                 </ul>
             </div>

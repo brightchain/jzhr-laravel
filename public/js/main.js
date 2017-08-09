@@ -157,7 +157,7 @@ var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile";
 
 if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) { 
 
-window.location.href= 'http://www.szqhzttc.com/wap'; 
+window.location.href= 'http://www.chinajzhr.com/';
 
 } else { 
 

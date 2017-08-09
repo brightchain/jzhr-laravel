@@ -28,7 +28,7 @@ class IndexController extends Controller
 
 
         $nav=DB::table('admin_menu')->where('parent_id',15)->get();
-        return view('index',compact('menus','name','values','nav'));
+        return view('index',compact('slides','name','values','nav'));
     }
 }
 

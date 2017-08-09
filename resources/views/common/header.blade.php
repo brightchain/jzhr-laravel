@@ -41,14 +41,9 @@
             <div class="uk-grid">
                 <div class="uk-width-3-10"> </div>
                 <div class="uk-width-7-10 uk-text-right">
-
-
                     <div id="top-member-status"></div>
-
-
-
-                    <a href="#" class="mobile-code"><i class="uk-icon-mobile"></i>手机<div class="weixin-code"></div></a>
-                    <a href="#"><i class="uk-icon-phone-square"></i>400-1586-999</a>
+                    <a href="#" class="mobile-code"><i class="uk-icon-wechat"></i>关注微信公众号<div class="weixin-code"></div></a>
+                    <a href="#"><i class="uk-icon-phone-square"></i>0755-82986878</a>
                 </div>
             </div>
         </div>
