@@ -104,7 +104,7 @@ class ProductsController extends Controller
             $form->display('id', 'ID');
             $form->text('title','基金名称');
             $form->select('type','所属栏目')->options([1 => '股权投资', 2 => '房地产投资', 3 => '定向增发', 4 => '并购（M&A）']);
-            $form->image('thumbs','产品图片')->resize(300,193);
+            $form->image('thumbs','产品图片')->uniqueName()->resize(300,193);
             $states = [
                 'on'  => ['value' => 1, 'text' => 'ON', 'color' => 'success'],
                 'off' => ['value' => 0, 'text' => 'OFF', 'color' => 'danger'],
@@ -122,7 +122,7 @@ class ProductsController extends Controller
             $form->text('overhead','管理费');
             $form->text('trustee','托管费');
             $form->text('field','投资领域');
-            $form->text('status','产品状态');
+            $form->select('status','产品状态')->options(['正在募集' => '正在募集', '存续期' => '存续期', '已兑付' => '已兑付']);
             $form->textarea('introduce','融资方介绍')->rows(4);
             $form->textarea('used','基金用途')->rows(4);
             $form->textarea('refund','还款来源')->rows(4);

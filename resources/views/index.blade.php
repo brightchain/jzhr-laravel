@@ -1,6 +1,14 @@
 @extends('common.layouts')
 @section('content')
+    <script>
+        $(document).ready(function(){
+            if ($.cookie("isClose") != 'yes') {
+                showinfos('合格投资者认定',2);
+            }
 
+
+        });//$(document).ready
+    </script>
     <div class="banner">
 
         <div class="uk-slidenav-position" data-uk-slideshow="{autoplay:true}">
@@ -106,7 +114,7 @@
     {{--</div><!--end about-->--}}
 
     <div class="pr-bg uk-margin-large-top uk-clearfix">
-        <div class="uk-h1 title-line uk-text-center uk-display-block" style="margin-top:70px;">产品中心</div>
+        <div class="uk-h1 title-line uk-text-center uk-display-block" style="margin-top:30px;">项目介绍</div>
 
         <div class="uk-container uk-container-center">
 
@@ -115,22 +123,19 @@
                     <ul class="uk-slider uk-grid uk-grid-width-1-3 uk-grid-width-xlarge-1-3">
                         <li>
                             <div class="home-pr uk-text-center">
-                                <div class="pr-img"><img src="img/fund1.jpg"></div>
+                                <div class="pr-img-hidden">
+                                    <div class="pr-img">
+                                        <img src="img/fund4.jpg">
+                                    </div>
+                                </div>
                                 <div class="inner">
-                                    <div class="uk-h3 uk-margin-small uk-text-left benh3" title="金砖金汇1号私募股权投资基金">金砖金汇1号私募股权投资基金<br>
+                                    <div class="uk-h3 uk-margin-small uk-text-content benh3" title="梅林合旺阁小区城市更新项目">梅林合旺阁小区城市更新项目
 
-                                        <div class="uk-badge uk-badge-notification uk-align-right uk-badge-warning">热销</div>
                                     </div>
-                                    <div style="margin-top: 20px;"><span style="color: #cc9966;font-weight: 700;font-family: 'Arial Black',Arial,Gadget,sans-serif;height: 38px;font-size: 25px;">10%</span></div>
+                                    <div class="uk-margin br3 uk-text-center">深圳福田区上梅林广夏路</div>
 
-                                    <div class="uk-margin br3">门槛：<span class="info-num">100</span>万
-                                        <span class="h-line"></span>期限：<span class="info-num">12/24</span>个月<br>
-                                    </div>
-
-
-                                    <div class="uk-margin br4"><span class="info-f">“</span>亮点：100%股权控制、100%产权控制、地铁口红本物业抵押、连带担保、预约受让、银行托管<span class="info-f">”</span></div>
                                     <div class="uk-margin br5">
-                                        <a href="#" onClick="return reservation('金砖金汇1号私募股权投资基金',4)">我要预约 ></a>
+
                                         <a href="products-detail.php?id=234">了解详情  ></a>
                                     </div>
                                 </div>
@@ -138,50 +143,41 @@
                         </li>
                         <li>
                             <div class="home-pr uk-text-center">
-                                <div class="pr-img"><img src="img/fund2.jpg"></div>
+                                <div class="pr-img-hidden">
+                                    <div class="pr-img">
+                                        <img src="img/fund4.jpg">
+                                    </div>
+                                </div>
+
                                 <div class="inner">
-                                    <div class="uk-h3 uk-margin-small uk-text-left benh3" title="金砖华荣卓越一号">金砖华荣卓越一号<br>
-
-                                        <div class="uk-badge uk-badge-notification uk-align-right uk-badge-cls">售罄</div>
-                                    </div>
-                                    <div style="margin-top: 20px;"><span style="color: #cc9966;font-weight: 700;font-family: 'Arial Black',Arial,Gadget,sans-serif;height: 38px;font-size: 25px;">10%~11%</span></div>
-
-                                    <div class="uk-margin br3">门槛：<span class="info-num">100</span>万
-                                        <span class="h-line"></span>期限：<span class="info-num">18+3/24+3</span>个月<br>
+                                    <div class="uk-h3 uk-margin-small uk-text-content benh3" title="梅林合旺阁小区城市更新项目">梅林合旺阁小区城市更新项目
 
                                     </div>
+                                    <div class="uk-margin br3 uk-text-center">深圳福田区上梅林广夏路</div>
 
-
-                                    <div class="uk-margin br4"><span class="info-f">“</span>亮点：产权持有、项目跟投、红本物业抵押、印鉴控制、连带责任担保、预约受让、资金监管<span class="info-f">”</span></div>
                                     <div class="uk-margin br5">
-                                        <a href="javascript:volid(0);" class="uk-disabled">我要预约 ></a>
-                                        <a href="javascript:volid(0);" class="uk-disabled">了解详情 ></a>
+
+                                        <a href="products-detail.php?id=234">了解详情  ></a>
                                     </div>
                                 </div>
                             </div>
                         </li>
-
-
                         <li>
                             <div class="home-pr uk-text-center">
-                                <div class="pr-img"><img src="img/fund3.jpg"></div>
+                                <div class="pr-img-hidden">
+                                    <div class="pr-img">
+                                        <img src="img/fund4.jpg">
+                                    </div>
+                                </div>
                                 <div class="inner">
-                                    <div class="uk-h3 uk-margin-small uk-text-left benh3" title="金汇2号-私募债权投资基金">金汇2号-私募债权投资基金<br>
-
-                                        <div class="uk-badge uk-badge-notification uk-align-right uk-badge-cls">售罄</div>
-                                    </div>
-                                    <div style="margin-top: 20px;"><span style="color: #cc9966;font-weight: 700;font-family: 'Arial Black',Arial,Gadget,sans-serif;height: 38px;font-size: 25px;">12%</span></div>
-
-                                    <div class="uk-margin br3">门槛：<span class="info-num">100</span>万
-                                        <span class="h-line"></span>期限：<span class="info-num">12/24</span>个月<br>
+                                    <div class="uk-h3 uk-margin-small uk-text-content benh3" title="梅林合旺阁小区城市更新项目">梅林合旺阁小区城市更新项目
 
                                     </div>
+                                    <div class="uk-margin br3 uk-text-center">深圳福田区上梅林广夏路</div>
 
-
-                                    <div class="uk-margin br4"><span class="info-f">“</span>亮点：1、一线城市，地铁口物业  2、横岗CBD物业，刚需性强  3、高楼层+高成熟度  4、基金+现楼认购  5、多重风控护航<span class="info-f">”</span></div>
                                     <div class="uk-margin br5">
-                                        <a href="javascript:volid(0);" class="uk-disabled">我要预约 ></a>
-                                        <a href="javascript:volid(0);" class="uk-disabled">了解详情 ></a>
+
+                                        <a href="products-detail.php?id=234">了解详情  ></a>
                                     </div>
                                 </div>
                             </div>
@@ -262,43 +258,17 @@
                 <div class="uk-slidenav-position uk-margin team-list uk-margin-large-top" data-uk-slider>
                     <div class="uk-slider-container">
                         <ul class="uk-slider uk-grid uk-grid-width-1-3 uk-grid-width-xlarge-1-3">
-
-
-
+                            @foreach($teams as $team)
                             <li>
                                 <div class="team uk-text-center">
-                                    <div class="team-img uk-border-circle team-img-hw"><a href="team.php"><img src="img/team1.jpg"></a></div>
+                                    <div class="team-img uk-border-circle team-img-hw"><a href="{{route('team')}}"><img src="/upload/{{$team->thumbs}}"></a></div>
                                     <div class="uk-margin">
-                                        <div class="uk-h2 uk-margin-small"><a href="team.php">贺 孟杰</a></div>
-                                        <div class="uk-h4 uk-margin-small">总裁 /董事办</div>
+                                        <div class="uk-h2 uk-margin-small"><a href="{{route('team')}}">{{$team->name}}</a></div>
+                                        <div class="uk-h4 uk-margin-small">{{$team->title}}</div>
                                     </div>
                                 </div>
                             </li>
-
-
-                            <li>
-                                <div class="team uk-text-center">
-                                    <div class="team-img uk-border-circle team-img-hw"><a href="team.php"><img src="img/team4.jpg"></a></div>
-                                    <div class="uk-margin">
-                                        <div class="uk-h2 uk-margin-small"><a href="team.php">阚 达</a></div>
-                                        <div class="uk-h4 uk-margin-small">投资总监 /证券投资部</div>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="team uk-text-center">
-                                    <div class="team-img uk-border-circle team-img-hw"><a href="team.php"><img src="img/team7.jpg"></a></div>
-                                    <div class="uk-margin">
-                                        <div class="uk-h2 uk-margin-small"><a href="team.php">孙 东旭</a></div>
-                                        <div class="uk-h4 uk-margin-small">产品经理 /产品研发部</div>
-                                    </div>
-                                </div>
-                            </li>
-
-
-
-
+                                @endforeach
                         </ul>
                     </div>
 
@@ -317,7 +287,7 @@
             <div class="uk-grid uk-margin-top">
 
                 <div class="uk-width-1-2 uk-margin-large-bottom">
-                    <div class="title"><span class="uk-h2">行业资讯</span><a href="news.php?class_id=242" class="a-link">更多</a></div>
+                    <div class="title"><span class="uk-h2">金砖动态</span><a href="{{route('news')}}" class="a-link">更多</a></div>
 
                     <div class="row" style="padding-top: 40px">
                         <div class="news-box clearfix">

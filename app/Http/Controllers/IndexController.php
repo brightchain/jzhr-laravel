@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Model\Team;
 use Illuminate\Http\Request;
 use App\Slide;
 use App\Webinfo;
@@ -16,19 +17,12 @@ class IndexController extends Controller
         $slides=Slide::orderBy('list')->get();
         $webinfos=Webinfo::all();
 
-        $name = $webinfos->mapWithKeys(function ($item) {
-            return [$item['title'] => $item['name']];
-        });
-        $name->all();
-
-        $values=$webinfos->mapWithKeys(function ($item) {
-            return [$item['title'] => $item['values']];
-        });
-        $values->all();
-
+        $teams=Team::orderBy('order')
+            ->orderBy('updated_at','DESC')
+            ->get();
 
         $nav=DB::table('admin_menu')->where('parent_id',15)->get();
-        return view('index',compact('slides','name','values','nav'));
+        return view('index',compact('slides','name','values','nav','teams'));
     }
 }
 

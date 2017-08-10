@@ -54,4 +54,6 @@ Route::get('/jobs','ContactController@jobs')->name('jobs');
 Route::any('/uploads','ImgController@upload')->name('upload');
 
 //合规投资者认定
-Route::any('/invest','InvestController@invest')->name('invest');
+Route::get('/invest','InvestController@invest')->name('invest');
+
+Route::post('/invest','InvestController@store')->name('store');

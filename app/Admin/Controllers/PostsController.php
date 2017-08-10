@@ -112,7 +112,7 @@ class PostsController extends Controller
             ];
             $form->switch('top','首页显示')->states($states)->default('1');
 
-            $form->image('thumbs','缩略图')->resize(174, 121);
+            $form->image('thumbs','缩略图')->uniqueName()->resize(174, 121);
             $form->editor('content','内容');
             $form->number('order','排序');
             $form->number('clicks','阅读量')->default('1');
