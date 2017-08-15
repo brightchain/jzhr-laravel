@@ -14,8 +14,9 @@ class NewsController extends Controller
     {
         $posts=Post::where('columns','j')
             ->orderBy('order')
-            ->orderBy('updated_at','desc')
+            ->orderBy('created_at','desc')
             ->paginate(6);
+
         $title="金砖动态";
 
         return view('news.center',compact('posts','title'));
@@ -26,9 +27,9 @@ class NewsController extends Controller
     {
         $posts=Post::where('columns','h')
             ->orderBy('order')
-            ->orderBy('updated_at','desc')
+            ->orderBy('created_at','desc')
             ->paginate(6);
-        $title='行业资讯';
+        $title="行业资讯";
 
         return view('news.center',compact('posts','title'));
     }
@@ -38,8 +39,10 @@ class NewsController extends Controller
     {
         $posts=Post::findOrFail($id);
         Post::findOrFail($id)->increment('clicks', 3);
+        $description=str_limit(strip_tags($posts->content),150);
         $title=$posts->title;
-        return view('news.show',compact('posts','title'));
+        $title1=($posts->columns=='j')?"金砖动态":"行业资讯";
+        return view('news.show',compact('posts','title','title1','description'));
 
     }
 }

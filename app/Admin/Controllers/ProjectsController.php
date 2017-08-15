@@ -2,7 +2,7 @@
 
 namespace App\Admin\Controllers;
 
-use App\Model\Post;
+use App\Model\Project;
 
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
@@ -10,9 +10,8 @@ use Encore\Admin\Facades\Admin;
 use Encore\Admin\Layout\Content;
 use App\Http\Controllers\Controller;
 use Encore\Admin\Controllers\ModelForm;
-use Intervention\Image\ImageManager;
 
-class PostsController extends Controller
+class ProjectsController extends Controller
 {
     use ModelForm;
 
@@ -25,7 +24,7 @@ class PostsController extends Controller
     {
         return Admin::content(function (Content $content) {
 
-            $content->header('新闻中心');
+            $content->header('项目案例');
             $content->description('列表');
 
             $content->body($this->grid());
@@ -42,7 +41,7 @@ class PostsController extends Controller
     {
         return Admin::content(function (Content $content) use ($id) {
 
-            $content->header('新闻中心');
+            $content->header('项目案例');
             $content->description('列表');
 
             $content->body($this->form()->edit($id));
@@ -58,7 +57,7 @@ class PostsController extends Controller
     {
         return Admin::content(function (Content $content) {
 
-            $content->header('新闻中心');
+            $content->header('项目案例');
             $content->description('列表');
 
             $content->body($this->form());
@@ -72,12 +71,11 @@ class PostsController extends Controller
      */
     protected function grid()
     {
-        return Admin::grid(Post::class, function (Grid $grid) {
-            $grid->model()->OrderBy('order')->orderBy('created_at', 'DESC');
+        return Admin::grid(Project::class, function (Grid $grid) {
+
             $grid->id('ID')->sortable();
-            $grid->title('标题');
-            $grid->thumbs('缩略图');
-            $grid->order('排序')->editable();
+            $grid->title('项目名称');
+            $grid->thumbs('项目图片');
             $states = [
                 'on' => ['text' => 'YES'],
                 'off' => ['text' => 'NO'],
@@ -86,9 +84,6 @@ class PostsController extends Controller
             $grid->column('top')->switchGroup([
                 'top' => '首页显示',
             ], $states);
-            $grid->clicks('阅读量');
-            $grid->created_at('创建时间');
-            $grid->updated_at('更新时间');
             $grid->created_at();
             $grid->updated_at();
         });
@@ -101,21 +96,19 @@ class PostsController extends Controller
      */
     protected function form()
     {
-        return Admin::form(Post::class, function (Form $form) {
+        return Admin::form(Project::class, function (Form $form) {
 
             $form->display('id', 'ID');
-            $form->text('title','标题');
-            $form->radio('columns','所属栏目')->options(['j' => '金砖动态', 'h'=> '行业资讯'])->default('j');
+            $form->text('title','项目名称');
+            $form->radio('type','所属栏目')->options(['股权投资' => '股权投资', '房地产投资'=> '房地产投资', '定向增发'=> '定向增发', '并购（M&A）'=> '并购（M&A）'])->default('股权投资');
             $states = [
                 'on'  => ['value' => 1, 'text' => 'ON', 'color' => 'success'],
                 'off' => ['value' => 0, 'text' => 'OFF', 'color' => 'danger'],
             ];
             $form->switch('top','首页显示')->states($states)->default('1');
-
-            $form->image('thumbs','缩略图')->uniqueName()->resize(174, 121);
+            $form->image('thumbs','项目图片')->uniqueName()->resize(215, 135);
             $form->editor('content','内容');
-            $form->number('order','排序');
-            $form->number('clicks','阅读量')->default('1');
+            $form->number('order')->default(1);
             $form->display('created_at', 'Created At');
             $form->display('updated_at', 'Updated At');
         });

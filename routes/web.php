@@ -36,6 +36,10 @@ Route::get('/merger','FundController@merger')->name('merger');
 Route::get('/fund/{id}','FundController@show')->name('fundshow');
 
 //业务范围
+Route::get('/case','FundController@case')->name('case');
+
+route::get('/case/{id}','FundController@past')->name('past');
+
 Route::get('/scope','FundController@scope')->name('scope');
 
 //新闻中心

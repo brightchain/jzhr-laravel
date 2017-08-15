@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddInvestsTable extends Migration
+class CreateProjectsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,14 @@ class AddInvestsTable extends Migration
      */
     public function up()
     {
-        Schema::table('invests', function (Blueprint $table) {
-            $table->string('fund');
+        Schema::create('projects', function (Blueprint $table) {
+            $table->increments('id');
             $table->string('title');
             $table->string('type');
             $table->string('thumbs');
-
+            $table->text('content');
+            $table->integer('order');
+            $table->timestamps();
         });
     }
 
@@ -29,8 +31,6 @@ class AddInvestsTable extends Migration
      */
     public function down()
     {
-        Schema::table('invests', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('projects');
     }
 }

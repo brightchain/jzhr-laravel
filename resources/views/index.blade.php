@@ -114,7 +114,7 @@
     {{--</div><!--end about-->--}}
 
     <div class="pr-bg uk-margin-large-top uk-clearfix">
-        <div class="uk-h1 title-line uk-text-center uk-display-block" style="margin-top:30px;">项目介绍</div>
+        <div class="uk-h1 title-line uk-text-center uk-display-block" style="margin-top:30px;">项目案列</div>
 
         <div class="uk-container uk-container-center">
 
@@ -129,7 +129,7 @@
                                     </div>
                                 </div>
                                 <div class="inner">
-                                    <div class="uk-h3 uk-margin-small uk-text-content benh3" title="梅林合旺阁小区城市更新项目">梅林合旺阁小区城市更新项目
+                                    <div class="uk-h3 uk-margin-small uk-text-content benh3" title="梅林合旺阁小区城市更新项目">梅林片区城市更新项目
 
                                     </div>
                                     <div class="uk-margin br3 uk-text-center">深圳福田区上梅林广夏路</div>
@@ -150,7 +150,7 @@
                                 </div>
 
                                 <div class="inner">
-                                    <div class="uk-h3 uk-margin-small uk-text-content benh3" title="梅林合旺阁小区城市更新项目">梅林合旺阁小区城市更新项目
+                                    <div class="uk-h3 uk-margin-small uk-text-content benh3" title="梅林片区城市更新项目">梅林片区城市更新项目
 
                                     </div>
                                     <div class="uk-margin br3 uk-text-center">深圳福田区上梅林广夏路</div>
@@ -170,7 +170,7 @@
                                     </div>
                                 </div>
                                 <div class="inner">
-                                    <div class="uk-h3 uk-margin-small uk-text-content benh3" title="梅林合旺阁小区城市更新项目">梅林合旺阁小区城市更新项目
+                                    <div class="uk-h3 uk-margin-small uk-text-content benh3" title="梅林片区城市更新项目">梅林片区城市更新项目
 
                                     </div>
                                     <div class="uk-margin br3 uk-text-center">深圳福田区上梅林广夏路</div>
@@ -194,60 +194,6 @@
 
     </div><!--end pr-->
 
-    {{--<div class="yw-bg">--}}
-        {{--<div class="uk-container uk-container-center">--}}
-            {{--<div class="uk-grid uk-margin-large-bottom">--}}
-                {{--<div class="uk-width-1-4 uk-text-right yw-title">--}}
-                    {{--BUSINESS AREAS<br>--}}
-                    {{--业务领域--}}
-                {{--</div>--}}
-                {{--<div class="uk-width-3-4 yw-info">--}}
-                    {{--金砖华荣是一家以基金发行与管理为主营业务的专业基金管理机构。<br>--}}
-                    {{--金砖华荣投资研究团队来自于银行、信托、证券、国际投行公司，<br>--}}
-                    {{--公司凭借投研团队的专业能力和资源优势，对金融、房地产、智能科技等成长性行业和板块进行深入的研究。--}}
-                {{--</div>--}}
-            {{--</div>--}}
-
-
-            {{--<div class="yws uk-grid uk-margin-large-bottom">--}}
-                {{--<div class="uk-width-1-2">--}}
-                    {{--<div class="yw-kk">--}}
-                        {{--<div class="pic"><img src="img/business1.jpg"></div>--}}
-                        {{--<div class="title">股权投资</div>--}}
-                        {{--<div class="info">金砖华荣致力于向具有高成长性的非上市企业进行股权投资，并提供相应的管理和其他增值服务，以期通过IPO或者其他方式退出，实现客户资金增值的资本运作。</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-
-                {{--<div class="uk-width-1-2">--}}
-                    {{--<div class="yw-kk">--}}
-                        {{--<div class="pic"><img src="img/business2.jpg"></div>--}}
-                        {{--<div class="title">房地产投资</div>--}}
-                        {{--<div class="info">金砖华荣致力于深圳本地优质房地产投资，通过物业并购、城市更新、物业旧改等投资方式，对标的项目进行深入全面的评估研究，在科学分析的基础上进行投资决策，灵活把握市场机会。</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-
-                {{--<div class="uk-width-1-2 uk-margin-large-top">--}}
-                    {{--<div class="yw-kk">--}}
-                        {{--<div class="pic"><img src="img/business3.jpg"></div>--}}
-                        {{--<div class="title">并购基金</div>--}}
-                        {{--<div class="info">金砖华荣为并购企业提供融资支持，如过桥贷款，以较低的风险获得固定或浮动收益，同时可通过将一部分债务融资转变成权益性资本，实现长期股权投资收益</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-
-                {{--<div class="uk-width-1-2 uk-margin-large-top">--}}
-                    {{--<div class="yw-kk">--}}
-                        {{--<div class="pic"><img src="img/business4.jpg"></div>--}}
-                        {{--<div class="title">证券投资</div>--}}
-                        {{--<div class="info">金砖华荣拥有来自于银行、信托、证券、 国际投行公司等专业的投资团队，公司凭借投研团队的专业能力和资源优势，对金融、房地产、智能科技等成长性行业--}}
-                            {{--和板块进行深入的研究。持续创造佳绩。</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-
-            {{--</div>--}}
-
-
-        {{--</div>--}}
-    {{--</div><!--end yw-->--}}
 
     <div class="team-bg">
         <div class="uk-container uk-container-center">
@@ -290,60 +236,39 @@
                     <div class="title"><span class="uk-h2">金砖动态</span><a href="{{route('news')}}" class="a-link">更多</a></div>
 
                     <div class="row" style="padding-top: 40px">
+                        @foreach($news as $new)
+                            @if($loop->iteration<3)
                         <div class="news-box clearfix">
                             <div class="news-box-img">
-                                <a href="">
-                                    <img src="img/news1.jpg" alt="">
+                                <a href="{{route('newShow',$new->id)}}">
+                                    <img src="/upload/{{$new->thumbs}}" alt="" style="height: 81px;width: 170px;">
                                 </a>
                             </div>
                             <div class="news-content">
-                                <a href="">
+                                <a href="{{route('newShow',$new->id)}}">
                                     <div class="title">
-                                        衡盛生物科技有限公司项目发布会
+                                        {{$new->title}}
                                     </div>
                                 </a>
                                 <div class="content">
-                                    2016年12月17日，“衡盛生物科技有限公司项目发布会”在深圳福田中信证券大厦23楼召开。 此次发布会是...
+                                    {{str_limit(strip_tags($new->content),100)}}...
                                 </div>
 
                             </div>
                         </div>
-                        <div class="news-box clearfix">
-                            <div class="news-box-img">
-                                <a href="">
-                                    <img src="img/news2.png" alt="">
-                                </a>
-                            </div>
-                            <div class="news-content">
-                                <a href="">
-                                    <div class="title">
-                                        衡盛生物科技有限公司项目发布会
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    2016年12月17日，“衡盛生物科技有限公司项目发布会”在深圳福田中信证券大厦23楼召开。 此次发布会是...
-                                </div>
+                            @endif
+                        @endforeach
 
-                            </div>
-                        </div>
                         <div class="news-list">
                             <ul>
+                                @foreach($news as $new)
+                                    @if($loop->iteration>2)
                                 <li>
-                                    <a href="">衡盛生物科技有限公司项目发布会</a>
-                                    <div class="news-date">2017.6.28</div>
+                                    <a href="{{route('newShow',$new->id)}}">{{$new->title}}</a>
+                                    <div class="news-date">{{date_format($new->updated_at,'Y-m-d')}}</div>
                                 </li>
-                                <li>
-                                    <a href="">衡盛生物科技有限公司项目发布会</a>
-                                    <div class="news-date">2017.6.28</div>
-                                </li>
-                                <li>
-                                    <a href="">衡盛生物科技有限公司项目发布会</a>
-                                    <div class="news-date">2017.6.28</div>
-                                </li>
-                                <li>
-                                    <a href="">衡盛生物科技有限公司项目发布会</a>
-                                    <div class="news-date">2017.6.28</div>
-                                </li>
+                                    @endif
+                                    @endforeach
                             </ul>
                         </div>
 

@@ -1,6 +1,5 @@
-<meta name="keywords" content="物业并购基金,房地产私募基金,深圳基金公司" />
-
-<meta name="description" content="s深圳金砖华荣资产管理有限公司" />
+<meta name="keywords" content="{{$keyed['keywords']}},{{$title}}" />
+<meta name="description" content="{{isset($description)?$description:$keyed['description']}}" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -62,15 +61,15 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="uk-parent" data-uk-dropdown><a href="{{route('scope')}}">业务范围</a>
+                            <li class="uk-parent" data-uk-dropdown><a href="{{route('case')}}">项目案例</a>
                                 <div class="uk-dropdown uk-dropdown-navbar">
                                     <ul class="uk-nav uk-nav-navbar">
+                                        <li><a href="{{route('case')}}">项目案例</a></li>
                                         <li><a href="{{route('scope')}}">业务范围</a></li>
-
                                     </ul>
                                 </div>
                             </li>
-                            <li class="uk-parent" data-uk-dropdown><a href="{{route('stock')}}">项目介绍</a>
+                            <li class="uk-parent" data-uk-dropdown><a href="{{route('stock')}}">基金管理</a>
                                 <div class="uk-dropdown uk-dropdown-navbar">
                                     <ul class="uk-nav uk-nav-navbar">
                                         <li><a href="{{route('stock')}}">股权投资</a></li>

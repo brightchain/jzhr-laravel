@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Webinfo;
 use Illuminate\Support\ServiceProvider;
 use function Sodium\add;
 use Spatie\Menu\Link;
@@ -19,9 +20,12 @@ class AppServiceProvider extends ServiceProvider
     {
 
         
-        $title='首页';
+        $webinfo=Webinfo::all();
+        $keyed = $webinfo->pluck('values','title');
+        $keyed->all();
 
-        view()->share(compact('menu','title'));
+        $title="首页";
+        view()->share(compact('keyed','title'));
 
     }
 

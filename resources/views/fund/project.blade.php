@@ -1,12 +1,13 @@
 @extends('common.layouts')
 @section('content')
+
     <div class="about-banner" style="background-image: url(/img/bannerabout.jpg)">
         <div class="m-bg">
             <div class="uk-container uk-container-center uk-text-left">
                 <div class="uk-grid">
                     <div class="uk-width-2-5 uk-padding-remove">
-                        <h1>新闻中心<br>
-                            PRESS CENTER</h1>
+                        <h1>项目案例<br>
+                            PROJECT CASE</h1>
                     </div>
                     <div class="uk-width-3-5 uk-text-right">
                         <h3>正行笃实、运筹制胜、诚信善为</h3>
@@ -24,7 +25,7 @@
                 <div  class="columnSpace" >
                     <div  class="FrontSpecifies_show01-d1_c1">
                         <p>
-                            新闻中心<span>PRESS CENTER</span>
+                            项目案例<span>PROJECT CASE</span>
                         </p>
                     </div>
                 </div>
@@ -34,8 +35,8 @@
                     <div class="FrontComContent_list01-d1_c1">
                         <div class="menu-first">
                             <ul class="list2">
-                                <li class=" menu-none"><a  href="{{route('news')}}" title="金砖动态" class="menu-text1 {{ Request::is('*news*') ? 'current' : '' }}">金砖动态</a></li>
-                                <li class="menu-none"><a  href="{{route('trade')}}" title="行业资讯" class="menu-text1 {{ Request::is('*trade*') ? 'current' : '' }} ">行业资讯</a></li>
+                                <li class=" menu-none"><a  href="{{route('case')}}" title="项目案例" class="menu-text1 {{ Request::is('*case*') ? 'current' : '' }}">项目案例</a></li>
+                                <li class=" menu-none"><a  href="{{route('scope')}}" title="业务范围" class="menu-text1 {{ Request::is('*scope*') ? 'current' : '' }}">业务范围</a></li>
 
                             </ul>
                         </div>
@@ -50,7 +51,9 @@
                 </p>
             </div>
             @section('text-content')
-            @show
+                @show
         </div>
+
     </div>
-    @endsection
+
+@endsection
