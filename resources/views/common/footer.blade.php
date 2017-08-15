@@ -30,29 +30,22 @@
                     <div class="c-line-left hide"></div>
                 </div>
                 <div class="c-blog">
+                    @foreach($jzhr as $new)
+                        @if($loop->iteration<3)
                     <div class="c-post">
                         <div class="c-post-img">
-                            <img src="/img/81.jpg" alt="" class="img-responsive" />
+                            <img src="/upload/{{$new->thumbs}}" alt="{{$new->title}}" class="img-responsive" />
                         </div>
                         <div class="c-post-content">
                             <h4 class="c-post-title">
-                                <a href="#">员工生日会活动</a>
+                                <a href="{{route('newShow',$new->id)}}">{{$new->title}}</a>
                             </h4>
-                            <p class="c-text">公司为3月份生日的同事举行员工生日会活动，更多精彩游戏...</p>
+                            <p class="c-text">{{str_limit(strip_tags($new->content),50)}}</p>
                         </div>
                     </div>
-                    <div class="c-post c-last">
-                        <div class="c-post-img">
-                            <img src="/img/13.jpg" alt="" class="img-responsive" />
-                        </div>
-                        <div class="c-post-content">
-                            <h4 class="c-post-title">
-                                <a href="#">产品路演发布会</a>
-                            </h4>
-                            <p class="c-text">3月12号在中信证券大厦召开产品路演发布会，这是一个股权类基金产品...</p>
-                        </div>
-                    </div>
-                    <a href="#" class="">更多...</a>
+                        @endif
+                    @endforeach
+                    <a href="{{route('news')}}" class="">更多...</a>
                 </div>
             </div>
             <div class="uk-width-1-4">

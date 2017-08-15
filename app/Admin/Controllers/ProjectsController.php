@@ -106,7 +106,7 @@ class ProjectsController extends Controller
                 'off' => ['value' => 0, 'text' => 'OFF', 'color' => 'danger'],
             ];
             $form->switch('top','首页显示')->states($states)->default('1');
-            $form->image('thumbs','项目图片')->uniqueName()->resize(215, 135);
+            $form->image('thumbs','项目图片')->uniqueName()->resize(308, 250);
             $form->editor('content','内容');
             $form->number('order')->default(1);
             $form->display('created_at', 'Created At');

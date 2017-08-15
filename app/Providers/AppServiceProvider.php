@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Model\Post;
 use App\Webinfo;
 use Illuminate\Support\ServiceProvider;
 use function Sodium\add;
@@ -23,9 +24,14 @@ class AppServiceProvider extends ServiceProvider
         $webinfo=Webinfo::all();
         $keyed = $webinfo->pluck('values','title');
         $keyed->all();
-
+        $jzhr=Post::where('columns','j')
+        ->where('top','1')
+        ->orderBy('order')
+        ->orderBy('created_at','DESC')
+        ->take('2')
+        ->get();
         $title="首页";
-        view()->share(compact('keyed','title'));
+        view()->share(compact('keyed','title','jzhr'));
 
     }
 

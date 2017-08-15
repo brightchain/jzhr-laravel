@@ -121,69 +121,29 @@
             <div class="uk-slidenav-position uk-margin pr-list uk-margin-large-top" data-uk-slider>
                 <div class="uk-slider-container">
                     <ul class="uk-slider uk-grid uk-grid-width-1-3 uk-grid-width-xlarge-1-3">
+                        @foreach($projects as $project)
                         <li>
                             <div class="home-pr uk-text-center">
                                 <div class="pr-img-hidden">
                                     <div class="pr-img">
-                                        <img src="img/fund4.jpg">
+                                        <img src="/upload/{{$project->thumbs}}">
                                     </div>
                                 </div>
                                 <div class="inner">
-                                    <div class="uk-h3 uk-margin-small uk-text-content benh3" title="梅林合旺阁小区城市更新项目">梅林片区城市更新项目
+                                    <div class="uk-h3 uk-margin-small uk-text-content benh3" title="{{$project->title}}">{{$project->title}}
 
                                     </div>
-                                    <div class="uk-margin br3 uk-text-center">深圳福田区上梅林广夏路</div>
+                                    <div class="uk-margin br3 uk-text-center"><i class="uk-icon-clock-o"></i>&nbsp  {{date_format($project->updated_at,'Y-m-d')}}&nbsp &nbsp
+                                        <i class="uk-icon-tags"></i>&nbsp {{$project->type}}&nbsp&nbsp</div>
 
                                     <div class="uk-margin br5">
 
-                                        <a href="products-detail.php?id=234">了解详情  ></a>
+                                        <a href="{{route('past',$project->id)}}">了解详情  ></a>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="home-pr uk-text-center">
-                                <div class="pr-img-hidden">
-                                    <div class="pr-img">
-                                        <img src="img/fund4.jpg">
-                                    </div>
-                                </div>
-
-                                <div class="inner">
-                                    <div class="uk-h3 uk-margin-small uk-text-content benh3" title="梅林片区城市更新项目">梅林片区城市更新项目
-
-                                    </div>
-                                    <div class="uk-margin br3 uk-text-center">深圳福田区上梅林广夏路</div>
-
-                                    <div class="uk-margin br5">
-
-                                        <a href="products-detail.php?id=234">了解详情  ></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="home-pr uk-text-center">
-                                <div class="pr-img-hidden">
-                                    <div class="pr-img">
-                                        <img src="img/fund4.jpg">
-                                    </div>
-                                </div>
-                                <div class="inner">
-                                    <div class="uk-h3 uk-margin-small uk-text-content benh3" title="梅林片区城市更新项目">梅林片区城市更新项目
-
-                                    </div>
-                                    <div class="uk-margin br3 uk-text-center">深圳福田区上梅林广夏路</div>
-
-                                    <div class="uk-margin br5">
-
-                                        <a href="products-detail.php?id=234">了解详情  ></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-
+                        @endforeach
                     </ul>
                 </div>
 
@@ -251,7 +211,7 @@
                                     </div>
                                 </a>
                                 <div class="content">
-                                    {{str_limit(strip_tags($new->content),100)}}...
+                                    {{str_limit(strip_tags($new->content),100)}}
                                 </div>
 
                             </div>
@@ -276,63 +236,41 @@
                 </div>
 
                 <div class="uk-width-1-2 uk-margin-large-bottom">
-                    <div class="title"><span class="uk-h2">金砖动态</span><a href="news.php?class_id=346" class="a-link">更多</a></div>
+                    <div class="title"><span class="uk-h2">行业动态</span><a href="{{route('trade')}}" class="a-link">更多</a></div>
 
                     <div class="row" style="padding-top: 40px">
+                        @foreach($trades as $trade)
+                            @if($loop->iteration<3)
                         <div class="news-box clearfix">
                             <div class="news-box-img">
-                                <a href="">
-                                    <img src="img/news1.jpg" alt="">
+                                <a href="{{route('newShow',$trade->id)}}">
+                                    <img src="/upload/{{$trade->thumbs}}" alt="{{$trade->title}}" style="height: 81px;width: 170px;">
                                 </a>
                             </div>
                             <div class="news-content">
-                                <a href="">
+                                <a href="{{route('newShow',$trade->id)}}">
                                     <div class="title">
-                                        衡盛生物科技有限公司项目发布会
+                                        {{$trade->title}}
                                     </div>
                                 </a>
                                 <div class="content">
-                                    2016年12月17日，“衡盛生物科技有限公司项目发布会”在深圳福田中信证券大厦23楼召开。 此次发布会是...
+                                    {{str_limit(strip_tags($trade->content),100)}}
                                 </div>
 
                             </div>
                         </div>
-                        <div class="news-box clearfix">
-                            <div class="news-box-img">
-                                <a href="">
-                                    <img src="img/news2.png" alt="">
-                                </a>
-                            </div>
-                            <div class="news-content">
-                                <a href="">
-                                    <div class="title">
-                                        衡盛生物科技有限公司项目发布会
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    2016年12月17日，“衡盛生物科技有限公司项目发布会”在深圳福田中信证券大厦23楼召开。 此次发布会是...
-                                </div>
-
-                            </div>
-                        </div>
+                            @endif
+                        @endforeach
                         <div class="news-list">
                             <ul>
+                                @foreach($trades as $trade)
+                                    @if($loop->iteration>2)
                                 <li>
-                                    <a href="">衡盛生物科技有限公司项目发布会</a>
-                                    <div class="news-date">2017.6.28</div>
+                                    <a href="{{route('newShow',$trade->id)}}">{{$trade->title}}</a>
+                                    <div class="news-date">{{date_format($new->updated_at,'Y-m-d')}}</div>
                                 </li>
-                                <li>
-                                    <a href="">衡盛生物科技有限公司项目发布会</a>
-                                    <div class="news-date">2017.6.28</div>
-                                </li>
-                                <li>
-                                    <a href="">衡盛生物科技有限公司项目发布会</a>
-                                    <div class="news-date">2017.6.28</div>
-                                </li>
-                                <li>
-                                    <a href="">衡盛生物科技有限公司项目发布会</a>
-                                    <div class="news-date">2017.6.28</div>
-                                </li>
+                                    @endif
+                                    @endforeach
                             </ul>
                         </div>
 
