@@ -78,6 +78,7 @@
         <div class="">
             <p class="c-copyright c-font-grey">2016-2019 &copy; 金砖华荣
                 <span class="c-font-grey-3">All Rights Reserved.</span>
+                <a href="http://www.miitbeian.gov.cn"> 粤ICP备16124515号-1</a>
             </p>
         </div>
     </div>

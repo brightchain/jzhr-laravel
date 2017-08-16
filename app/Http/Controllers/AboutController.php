@@ -10,13 +10,15 @@ class AboutController extends Controller
 {
 
     //关于我们栏目页
-
+    protected $navColumn='关于金砖';
     //公司简介
     public function company()
     {
         $company=Company::where('name','company')->first();
         $title=$company->title;
-        return view('about.company',compact('company','title'));
+        $navColumn=$this->navColumn;
+
+        return view('about.company',compact('company','title','navColumn'));
     }
 
 
@@ -25,7 +27,9 @@ class AboutController extends Controller
     {
         $concept=Company::where('name','concept')->first();
         $title=$concept->title;
-        return view('about.concept',compact('concept','title'));
+        $navColumn=$this->navColumn;
+
+        return view('about.concept',compact('concept','title','navColumn'));
     }
 
 
@@ -35,7 +39,9 @@ class AboutController extends Controller
 
         $teams=Team::orderBy('order')->orderBy('updated_at','DESC')->get();
          $title="管理团队";
-        return view('about.team',compact('teams','title'));
+        $navColumn=$this->navColumn;
+
+        return view('about.team',compact('teams','title','navColumn'));
     }
 
 
@@ -44,7 +50,9 @@ class AboutController extends Controller
     {
         $risk=Company::where('name','risk')->first();
         $title=$risk->title;
-        return view('about.risk',compact('risk','title'));
+        $navColumn=$this->navColumn;
+
+        return view('about.risk',compact('risk','title','navColumn'));
     }
 
 

@@ -10,6 +10,8 @@ use Illuminate\Http\Request;
 class FundController extends Controller
 {
     //
+    protected $navColumn='基金管理';
+
     public function stock()
     {
         $funds=Product::where('type','1')
@@ -17,16 +19,18 @@ class FundController extends Controller
             ->orderBy('updated_at')
             ->paginate(4);
         $title='股权投资';
+        $navColumn=$this->navColumn;
 
-        return view('fund.product',compact('funds','title'));
+        return view('fund.product',compact('funds','title','navColumn'));
     }
 
     public function show($id)
     {
         $funds=Product::findOrFail($id);
         $title=$funds->title;
+        $navColumn=$this->navColumn;
 
-        return view('fund.show',compact('funds','title'));
+        return view('fund.show',compact('funds','title','navColumn'));
     }
 
     public function real()
@@ -36,8 +40,9 @@ class FundController extends Controller
             ->orderBy('updated_at')
             ->paginate(4);
         $title='房地产投资';
+        $navColumn=$this->navColumn;
 
-        return view('fund.product',compact('funds','title'));
+        return view('fund.product',compact('funds','title','navColumn'));
     }
 
     public function placement()
@@ -47,8 +52,9 @@ class FundController extends Controller
             ->orderBy('updated_at')
             ->paginate(4);
         $title='定向增发';
+        $navColumn=$this->navColumn;
 
-        return view('fund.product',compact('funds','title'));
+        return view('fund.product',compact('funds','title','navColumn'));
     }
 
     public function merger()
@@ -58,8 +64,9 @@ class FundController extends Controller
             ->orderBy('updated_at')
             ->paginate(4);
         $title='并购（M&A）';
+        $navColumn=$this->navColumn;
 
-        return view('fund.product',compact('funds','title'));
+        return view('fund.product',compact('funds','title','navColumn'));
     }
 
     //业务范围
@@ -68,7 +75,7 @@ class FundController extends Controller
         $scope=Company::where('name','scope')->first();
         $title=$scope->title;
 
-        return view('fund.scope',compact('scope','title'));
+        return view('fund.scope',compact('scope','title','navColumn'));
     }
 
     //项目案列
@@ -80,7 +87,7 @@ class FundController extends Controller
             ->orderBy('created_at','DESC')
             ->paginate(5);
 
-        return view('fund.case',compact('title','pasts','title1'));
+        return view('fund.case',compact('title','pasts','title1','navColumn'));
     }
 
     public function past($id)
@@ -88,6 +95,8 @@ class FundController extends Controller
         $pasts=Project::findOrFail($id);
         $title=$pasts->title;
         $title1="项目案列";
-        return view('fund.caseshow',compact('title','pasts','title1'));
+        $navColumn='项目案例';
+
+        return view('fund.caseshow',compact('title','pasts','title1','navColumn'));
     }
 }

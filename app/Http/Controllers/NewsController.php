@@ -9,6 +9,8 @@ use Visitor;
 
 class NewsController extends Controller
 {
+    protected $navColumn='新闻动态';
+
     //金砖动态
     public function company()
     {
@@ -16,10 +18,10 @@ class NewsController extends Controller
             ->orderBy('order')
             ->orderBy('created_at','desc')
             ->paginate(6);
-
         $title="金砖动态";
+        $navColumn=$this->navColumn;
 
-        return view('news.center',compact('posts','title'));
+        return view('news.center',compact('posts','title','navColumn'));
     }
 
     //行业资讯
@@ -30,8 +32,9 @@ class NewsController extends Controller
             ->orderBy('created_at','desc')
             ->paginate(6);
         $title="行业资讯";
+        $navColumn=$this->navColumn;
 
-        return view('news.center',compact('posts','title'));
+        return view('news.center',compact('posts','title','navColumn'));
     }
 
     //新闻内容
@@ -42,7 +45,9 @@ class NewsController extends Controller
         $description=str_limit(strip_tags($posts->content),150);
         $title=$posts->title;
         $title1=($posts->columns=='j')?"金砖动态":"行业资讯";
-        return view('news.show',compact('posts','title','title1','description'));
+        $navColumn=$this->navColumn;
+
+        return view('news.show',compact('posts','title','title1','description','navColumn'));
 
     }
 }

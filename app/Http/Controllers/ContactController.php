@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
+    protected $navColumn='联系我们';
     //联系我们内容页
     public function index()
     {
@@ -23,6 +24,8 @@ class ContactController extends Controller
             ->orderBy('updated_at','DESC')
             ->get();
         $title="招贤纳士";
-        return view('contact.jobs',compact('jobs','title'));
+        $navColumn=$this->navColumn;
+
+        return view('contact.jobs',compact('jobs','title','navColumn'));
     }
 }

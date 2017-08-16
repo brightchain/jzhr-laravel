@@ -1,4 +1,4 @@
-<meta name="keywords" content="{{$keyed['keywords']}},{{$title}}" />
+<meta name="keywords" content="{{$keyed['keywords']}},{{$title}},{{isset($navColumn)?$navColumn:''}}" />
 <meta name="description" content="{{isset($description)?$description:$keyed['description']}}" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">

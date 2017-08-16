@@ -13,16 +13,7 @@
 
         <div class="uk-slidenav-position" data-uk-slideshow="{autoplay:true}">
 
-            <div class="regrm" style="display:none">
-                <div class="uk-form-icon uk-margin-large-top"><i class="uk-icon-mobile"></i><input name="phoneid" type="text" id="phoneid" maxlength="11" placeholder="请输入您的手机号码"></div>
-                <div class="uk-form-icon"><i class="uk-icon-lock"></i><input name="password" type="password" id="password" maxlength="64" placeholder="请输入您的密码"></div>
-                <div class="uk-form-icon"><i class="uk-icon-file-text-o"></i><input name="confid" type="text" id="confid" maxlength="4" placeholder="输入验证码">
-                    <div class="vcode"><img title="点击刷新" src="inc/captcha.php" align="absbottom" onClick="this.src='inc/captcha.php?'+Math.random();"></div>
-                </div>
 
-                <div class="reg-buts"><button class="uk-button uk-button-danger uk-border-rounded" type="button">注册</button> <button class="uk-button uk-button-danger uk-border-rounded" type="button">登录</button></div>
-                <div class="uk-text-right uk-margin-large-right"><a href="#">忘记密码</a></div>
-            </div>
 
             <ul class="uk-slideshow uk-overlay-active"  >
                 @foreach($slides as $slide)
