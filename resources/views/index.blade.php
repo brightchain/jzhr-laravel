@@ -13,8 +13,6 @@
 
         <div class="uk-slidenav-position" data-uk-slideshow="{autoplay:true}">
 
-
-
             <ul class="uk-slideshow uk-overlay-active"  >
                 @foreach($slides as $slide)
                 <li>
@@ -28,27 +26,6 @@
                     </div></a>
                 </li>
                 @endforeach
-                {{--<li>--}}
-                    {{--<img src="img/banner1.jpg"  alt="">--}}
-                    {{--<div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-left">--}}
-                        {{--<div class="banner-text"><div class="uk-text-right">--}}
-                                {{--<h1>致力于为个人、企业和机构提供优质的资产管理服务</h1>--}}
-                                {{--<h2>——金砖华荣</h2>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</li>--}}
-                {{--<li>--}}
-                    {{--<img src="img/banner3.jpg"  alt="">--}}
-                    {{--<div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-left">--}}
-                        {{--<div class="banner-text"><div class="uk-text-right">--}}
-                                {{--<h1>致力打造构建和谐健康、生机繁荣的金融生态环境11111</h1>--}}
-                                {{--<h2>——正行笃实、运筹制胜、诚信善为</h2>--}}
-
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</li>--}}
             </ul>
             <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
             <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
@@ -61,13 +38,8 @@
                     {{--<li data-uk-slideshow-item="1"><a href=""></a></li>--}}
                     {{--<li data-uk-slideshow-item="2"><a href=""></a></li>--}}
                 </div>
-
-
             </ul>
-
         </div>
-
-
     </div><!--end banner-->
 
     {{--<div class="uk-container uk-container-center uk-text-center uk-margin-large-top">--}}

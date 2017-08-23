@@ -81,8 +81,8 @@ class FundController extends Controller
     //项目案列
     public function case()
     {
-        $title='项目案列';
-        $title1='项目案列';
+        $title='项目案例';
+        $title1='项目案例';
         $pasts=Project::orderBy('order')
             ->orderBy('created_at','DESC')
             ->paginate(5);
@@ -94,7 +94,7 @@ class FundController extends Controller
     {
         $pasts=Project::findOrFail($id);
         $title=$pasts->title;
-        $title1="项目案列";
+        $title1="项目案例";
         $navColumn='项目案例';
 
         return view('fund.caseshow',compact('title','pasts','title1','navColumn'));

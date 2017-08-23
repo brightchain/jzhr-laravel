@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{$title}}-{{isset($navColumn)?$navColumn.'-':''}}{{Admin::title()}}</title>
+    <title>{{$title}}_{{isset($navColumn)?$navColumn.'_':''}}{{Admin::title()}}</title>
 
 @include('common.header')
 

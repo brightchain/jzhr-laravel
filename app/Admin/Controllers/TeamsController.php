@@ -95,7 +95,7 @@ class TeamsController extends Controller
             $form->text('name','姓名');
             $form->text('title','职位');
             $form->image('thumbs','头像');
-            $form->text('content','详细介绍');
+            $form->textarea('content','详细介绍')->rows(5);
             $form->number('order','排序')->default('1');
             $form->display('created_at', 'Created At');
             $form->display('updated_at', 'Updated At');
