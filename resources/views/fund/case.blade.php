@@ -14,7 +14,7 @@
                             <h2 style="color: #cc9966;">{{$past->title}}</h2>
                         </a>
                             <p>
-                                {{str_limit(strip_tags($past->content),150)}}
+                                {{str_limit(strip_tags($past->content),300)}}
                             </p>
                         <div><i class="uk-icon-clock-o">&nbsp; {{date_format($past->updated_at,'Y-m-d')}}</i>&nbsp; &nbsp;  <i class="uk-icon-tags">&nbsp; {{$past->type}}</i> </div>
 

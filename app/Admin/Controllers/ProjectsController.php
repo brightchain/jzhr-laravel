@@ -100,7 +100,7 @@ class ProjectsController extends Controller
 
             $form->display('id', 'ID');
             $form->text('title','项目名称');
-            $form->radio('type','所属栏目')->options(['股权投资' => '股权投资', '房地产投资'=> '房地产投资', '定向增发'=> '定向增发', '并购（M&A）'=> '并购（M&A）'])->default('股权投资');
+            $form->radio('type','所属栏目')->options(['股权投资' => '股权投资','债权投资'=> '债权投资', '房地产投资'=> '房地产投资', '定向增发'=> '定向增发', '并购（M&A）'=> '并购（M&A）'])->default('股权投资');
             $states = [
                 'on'  => ['value' => 1, 'text' => 'ON', 'color' => 'success'],
                 'off' => ['value' => 0, 'text' => 'OFF', 'color' => 'danger'],
