@@ -188,7 +188,7 @@
                                     @if($loop->iteration>2)
                                 <li>
                                     <a href="{{route('newShow',$new->id)}}">{{$new->title}}</a>
-                                    <div class="news-date">{{date_format($new->updated_at,'Y-m-d')}}</div>
+                                    <div class="news-date">{{date_format($new->created_at,'Y-m-d')}}</div>
                                 </li>
                                     @endif
                                     @endforeach
@@ -230,7 +230,7 @@
                                     @if($loop->iteration>2)
                                 <li>
                                     <a href="{{route('newShow',$trade->id)}}">{{$trade->title}}</a>
-                                    <div class="news-date">{{date_format($new->updated_at,'Y-m-d')}}</div>
+                                    <div class="news-date">{{date_format($trade->created_at,'Y-m-d')}}</div>
                                 </li>
                                     @endif
                                     @endforeach

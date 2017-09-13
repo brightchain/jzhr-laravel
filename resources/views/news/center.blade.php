@@ -46,7 +46,7 @@
             <div class="uk-width-7-10 uk-margin-left">
                 <div class="ntitle"><a href="{{route('newShow',$post->id)}}">{{$post->title}}</a></div>
                 <div class="infos" style="height:48px; overflow:hidden">{{str_limit(strip_tags($post->content),150)}}</div>
-                <div class="info-bar"><div class="uk-display-inline-block"><i class="uk-icon-clock-o"></i> {{date_format($post->updated_at,'Y-m-d')}}　<i class="uk-icon-eye"></i> {{$post->clicks}}</div>
+                <div class="info-bar"><div class="uk-display-inline-block"><i class="uk-icon-clock-o"></i> {{date_format($post->created_at,'Y-m-d')}}　<i class="uk-icon-eye"></i> {{$post->clicks}}</div>
                     <div class="uk-align-right uk-display-inline-block"><a href="{{route('newShow',$post->id)}}">点击全文</a>　</div></div>
             </div>
         </div>

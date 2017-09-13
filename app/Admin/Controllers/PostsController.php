@@ -116,7 +116,7 @@ class PostsController extends Controller
             $form->editor('content','内容');
             $form->number('order','排序');
             $form->number('clicks','阅读量')->default('1');
-            $form->display('created_at', 'Created At');
+            $form->date('created_at', 'Created At')->format('YYYY-MM-DD HH:mm:ss');
             $form->display('updated_at', 'Updated At');
         });
     }

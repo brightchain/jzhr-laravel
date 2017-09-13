@@ -4,7 +4,7 @@
         <div class="uk-article ">
         <h1 class="uk-article-title uk-text-center">{{$posts->title}}</h1>
         <p class="uk-article-meta uk-text-center">
-            <i class="uk-icon-clock-o"></i>&nbsp  {{date_format($posts->updated_at,'Y-m-d')}}&nbsp &nbsp
+            <i class="uk-icon-clock-o"></i>&nbsp  {{date_format($posts->created_at,'Y-m-d')}}&nbsp &nbsp
             <i class="uk-icon-eye"></i>&nbsp {{$posts->clicks}}&nbsp&nbsp
             <i class="uk-icon-pencil"></i>&nbsp chinajzhr
         </p>
